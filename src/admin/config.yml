@@ -1,0 +1,204 @@
+local_backend: true
+backend:
+  name: git-gateway
+  branch: master
+media_folder: 'src/uploads'
+public_folder: '/uploads'
+
+navigation: &NAVIGATION
+  label: 'Navigation'
+  name: 'eleventyNavigation'
+  widget: 'object'
+  collasped: true
+  fields:
+    - { label: 'Key', name: 'key', widget: 'string', required: false }
+    - { label: 'Parent', name: 'parent', widget: 'string', required: false }
+    - { label: 'Order', name: 'order', widget: 'number', required: false }
+    - { label: 'Excerpt', name: 'excerpt', widget: 'string', required: false }
+
+meta: &META
+  label: 'Meta'
+  name: 'meta'
+  widget: 'object'
+  collapsed: true
+  fields:
+    - { label: 'Title', name: 'title', widget: 'string', required: false }
+    - { label: 'Description', name: 'desc', widget: 'string', required: false }
+    - { label: 'Social Image', name: 'socialImage', widget: 'image', required: false }
+
+button: &BUTTON
+  label: 'Button'
+  name: 'button'
+  widget: 'object'
+  collapsed: true
+  fields:
+    - { label: 'Text', name: 'text', widget: 'string', required: false }
+    - { label: 'Link', name: 'link', widget: 'string', required: false }
+
+themeOptions: &THEMEOPTIONS
+  - { label: 'Red', value: 'bg-primary' }
+  - { label: 'Green', value: 'bg-secondary' }
+
+theme: &THEME
+  label: 'Theme'
+  name: 'theme'
+  widget: 'select'
+  collapsed: true
+  required: false
+  options:
+    - { label: 'Red', value: 'bg-primary color-light' }
+    - { label: 'Green', value: 'bg-secondary color-light' }
+    - { label: 'Bagle', value: 'bg-bagle color-dark' }
+    - { label: 'Gold', value: 'bg-secondary color-gold' }
+    - { label: 'Attention', value: 'bg-secondary color-attention' }
+
+articleblocks: &ARTICLEBLOCKS
+  label: 'Article Blocks'
+  name: 'articleblocks'
+  widget: 'list'
+  types:
+    - label: 'Text'
+      name: 'text'
+      widget: object
+      fields:
+        - { label: 'Content', name: 'content', widget: 'markdown' }
+        - { label: 'Spacing Top', name: 'spacingtop', widget: 'string', required: false }
+        - { label: 'Spacing Bottom', name: 'spacingbottom', widget: 'string', required: false }
+    - label: 'Recipe'
+      name: 'recipe'
+      widget: object
+      fields:
+        - { label: 'Ingredients', name: 'ingredients', widget: 'markdown' }
+        - { label: 'Method', name: 'method', widget: 'markdown' }
+    - label: 'Single Image'
+      name: 'singleimage'
+      widget: 'object'
+      fields:
+        - { label: 'Image', name: 'image', widget: 'image' }
+        - { label: 'Alt', name: 'alt', widget: 'string', required: false }
+    - label: 'Double Image'
+      name: 'doubleimage'
+      widget: 'object'
+      fields:
+        - { label: 'Image 1', name: 'imageone', widget: 'image' }
+        - { label: 'Alt', name: 'altone', widget: 'string', required: false }
+        - { label: 'Image 2', name: 'imagetwo', widget: 'image' }
+        - { label: 'Alt', name: 'alttwo', widget: 'string', required: false }
+    - label: 'Quote'
+      name: 'quote'
+      widget: object
+      fields:
+        - { label: 'Content', name: 'content', widget: 'markdown' }
+
+blocks: &BLOCKS
+  label: 'Blocks'
+  name: 'blocks'
+  widget: 'list'
+  types:
+    - label: 'Text'
+      name: 'text'
+      widget: object
+      fields:
+        - { label: 'Content', name: 'content', widget: 'markdown' }
+        - { label: 'Spacing Top', name: 'spacingtop', widget: 'string', required: false }
+        - { label: 'Spacing Bottom', name: 'spacingbottom', widget: 'string', required: false }
+    - label: 'Image'
+      name: 'image'
+      widget: 'object'
+      fields:
+        - { label: 'Image', name: 'image', widget: 'image' }
+        - { label: 'Alt', name: 'alt', widget: 'string', required: false }
+    - label: 'Hero'
+      name: 'hero'
+      widget: 'object'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Image', name: 'image', widget: 'image' }
+        - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+        - { label: 'Theme', name: 'themeBg', widget: 'select', options: *THEMEOPTIONS, required: false }
+        - *BUTTON
+    - label: 'Hero Basic'
+      name: 'herobasic'
+      widget: 'object'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Theme', name: 'themeBg', widget: 'select', options: *THEMEOPTIONS, required: false }
+        - *BUTTON
+    - label: 'Focus Panel'
+      name: 'focuspanel'
+      widget: object
+      fields:
+        - { label: 'Text', name: 'text', widget: 'string' }
+        - { label: 'Image', name: 'image', widget: 'image' }
+    - label: 'Services'
+      name: 'services'
+      widget: object
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Desc', name: 'description', widget: 'string' }
+        - *BUTTON
+        - *THEME
+    - label: 'Checklist Pane'
+      name: 'checklistpane'
+      widget: object
+      fields:
+        - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+        - { label: 'Spacing Top', name: 'spacingtop', widget: 'string', required: false }
+        - { label: 'Spacing Bottom', name: 'spacingbottom', widget: 'string', required: false }
+    - label: 'FAQs'
+      name: 'faqs'
+      widget: object
+      fields:
+        - { label: 'title', name: 'title', widget: 'string' }
+        - { label: 'desc', name: 'desc', widget: 'markdown' }
+    - label: 'Articles'
+      name: 'articles'
+      widget: object
+      fields:
+        - { label: 'title', name: 'title', widget: 'string' }
+    - label: 'Form'
+      name: 'form'
+      widget: object
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+        - { label: 'Select Form', name: 'selectform', widget: 'select', options: ['contact'] }
+    - label: 'Message Box'
+      name: 'messagebox'
+      widget: object
+      fields:
+        - { label: 'Content', name: 'content', widget: 'markdown', required: false }
+        - *THEME
+
+collections:
+  - label: 'Pages'
+    name: 'pages'
+    folder: 'src'
+    identifier_field: 'title'
+    create: true
+    filter: {field: "type", value: "page"} # I think i can use this to control what is seen in the CMS for the page listing
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    extension: 'md'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/page.njk' }
+      - { label: 'Page type', name: 'type', widget: 'hidden', default: 'page' } #set a custom field of type equal to page - we then use a filter above to only list the pages where the type is set to 'page'
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - *BLOCKS
+      - *META
+      - *NAVIGATION
+  - label: "Globals"
+    name: "globals"
+    files:
+      - label: "FAQs"
+        name: "faqs"
+        file: "src/_data/faqs.json"
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: 'Summary', name: 'summary', widget: 'string' }
+              - { label: 'Detail', name: 'detail', widget: 'markdown' }

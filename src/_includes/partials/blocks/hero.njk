@@ -1,0 +1,22 @@
+<section class="hero">
+  <img src="{{ block.image | default('/uploads/hero-home.jpg') }}" class="hero__background" alt="">
+  
+  <div class="[ wrapper ] [ max-w-7xl ]">
+    <div class="flow">
+      <span class="hero__eyebrow [ eyebrow ]">{{ block.eyebrow }}</span>
+      <h1 class="hero__title [ text-1000 ]">{{ block.title }}</h1>
+
+      {{ block.content | markdown | safe }}
+
+      <div class="[ stack ] [ justify-center gap-x-200 ]">
+        {% for button in block.buttons %}
+          <a href="{{ button.link }}" class="button">
+            {{ button.text }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="icon">{% include '../../../img/hero-icon.svg' %}</div>
+  </div>
+</section>

@@ -8,10 +8,50 @@
     <script>document.documentElement.classList.remove('no-js');</script>
 
     <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/js/components/menu-toggle.js" type="module"></script>
   </head>
   <body>
+    {# header #}
+    <header class="site-header" aria-expanded="false">
+      <div class="wrapper">
+        <div class="site-header__cont [ stack ]">
+        <button class="menu-toggle" data-menu-toggle="false" aria-label="Toggle Menu">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+          <nav class="[ navigation ] [ basis-full flex-1 lg:flex-initial g:basis-auto ]">
+            <ul class="[ nav ] [ stack ] [ flex-col lg:flex-row lg:items-center ]" role="list">
+              {% for item in collections.all | eleventyNavigation %}
+                <li>
+                  <a href="{{ item.url }}">
+                    {{ item.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          <div class="logo [ flex-1 ]">
+            <a href="/">{% include '../../img/logo.svg' %}</a>
+          </div>
+
+          <div class="action [ flex justify-end ]">
+            <a href="#" class="button">
+              Embark Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
       {{ content | safe }}
     </main>
+
+    {# footer #}
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
   </body>
 </html>

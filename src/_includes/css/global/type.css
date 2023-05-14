@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter.var.woff2') format('woff2');
+  font-weight: 300 900;
+  font-display: swap;
+}
+
 body {
   font-family: var(--font-sans);
-  font-size: var(--text-400);
+  font-size: var(--text-200);
 }
 
 h1,
@@ -8,30 +15,36 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: var(--font-bold);
+  font-weight: var(--font-medium);
   line-height: var(--leading-none);
 }
 
 h1 {
-  font-size: var(--text-900);
-}
-
-h2 {
-  font-size: var(--text-800);
-}
-
-h3 {
   font-size: var(--text-600);
 }
 
+h2 {
+  font-size: var(--text-700);
+}
+
+h3 {
+  font-size: var(--text-800);
+}
+
 h4 {
-  font-size: var(--text-500);
+  font-size: var(--text-900);
 }
 
 h5 {
-  font-size: var(--text-400);
+  font-size: var(--text-1000);
 }
 
 a {
   color: currentColor;
+}
+
+.eyebrow{
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  font-size: 1rem;
 }

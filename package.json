@@ -7,6 +7,7 @@
     "url": "https://github.com/bly-th/eleventy"
   },
   "scripts": {
+    "admin": "npx netlify-cms-proxy-server",
     "dev": "npm-run-all -p dev:*",
     "dev:css": "cross-env NODE_ENV=production npx tailwindcss -o src/_includes/css/global/tokens.css --watch",
     "dev:11ty": "eleventy --serve --incremental",

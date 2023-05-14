@@ -67,10 +67,6 @@
   display: flex
 }
 
-.hidden {
-  display: none
-}
-
 .max-w-7xl {
   max-width: 80rem
 }
@@ -115,15 +111,5 @@
 
   .lg\:items-center {
     align-items: center
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:flex {
-    display: flex
-  }
-
-  .xl\:flex-initial {
-    flex: 0 1 auto
   }
 }

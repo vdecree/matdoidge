@@ -8,3 +8,9 @@
     text-decoration: none;
     font-size: 1rem;
 }
+
+.button[data-type=secondary]{
+    background-color: var(--color-secondary);
+    border: 0;
+    color: var(--color-light);
+}

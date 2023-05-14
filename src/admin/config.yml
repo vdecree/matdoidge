@@ -34,6 +34,22 @@ blocks: &BLOCKS
             - { label: 'Text', name: 'text', widget: 'string' }
             - { label: 'Link', name: 'link', widget: 'string' }
         - { label: 'Image', name: 'image', widget: 'image' }
+    - label: 'Intro'
+      name: 'intro'
+      widget: 'object'
+      fields:
+        - { label: 'Image', name: 'image', widget: 'image' }
+        - { label: 'Alt', name: 'alt', widget: 'string' }
+        - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Content', name: 'content', widget: 'markdown' }
+        - label: 'Button'
+          name: 'button'
+          widget: 'object'
+          required: false
+          fields:
+            - { label: 'Text', name: 'text', widget: 'string', required: false }
+            - { label: 'Link', name: 'link', widget: 'string', required: false }
 
 
 meta: &META

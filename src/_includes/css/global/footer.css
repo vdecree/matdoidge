@@ -1,0 +1,24 @@
+.site-footer{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.site-footer .eyebrow{
+    color: var(--color-primary);
+}
+
+.site-footer__top{
+    padding: calc(8rem + var(--size-1000)) 0 var(--size-1000);
+}
+
+.site-footer__bottom{
+    padding-bottom: var(--size-800);
+    font-size: calc(-.2rem + var(--text-200));
+    opacity: .3;
+}
+
+.site-footer__top .gfx svg{
+    width: 14rem;
+    height: auto;
+    fill: var(--color-light);
+}

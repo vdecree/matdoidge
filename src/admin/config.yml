@@ -50,7 +50,36 @@ blocks: &BLOCKS
           fields:
             - { label: 'Text', name: 'text', widget: 'string', required: false }
             - { label: 'Link', name: 'link', widget: 'string', required: false }
-
+    - label: 'Services'
+      name: 'services'
+      widget: 'object'
+      fields:
+        - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Content', name: 'content', widget: 'markdown' }
+        - label: 'Button'
+          name: 'button'
+          widget: 'object'
+          required: false
+          fields:
+            - { label: 'Text', name: 'text', widget: 'string', required: false }
+            - { label: 'Link', name: 'link', widget: 'string', required: false }
+        - label: 'Specialisms'
+          name: 'specialisms'
+          widget: list
+          collapsed: true
+          required: false
+          fields:
+            - { label: 'Service Name', name: 'servicename', widget: 'string' }
+            - { label: 'Icon', name: 'icon', widget: 'image' }
+            - { label: 'Text', name: 'text', widget: 'markdown' }
+            - { label: 'Link', name: 'link', widget: 'string', required: false }
+    - label: 'Work'
+      name: 'work'
+      widget: 'object'
+      fields:
+        - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
+        - { label: 'Title', name: 'title', widget: 'string' }
 
 meta: &META
   label: 'Meta'
@@ -104,3 +133,46 @@ collections:
       - *META
       - *SOCIAL
       - *NAVIGATION
+  - label: 'Projects'
+    name: 'projects'
+    folder: 'src/work/items'
+    identifier_field: 'title'
+    create: true
+    extension: 'md'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Tagline", name: "tagline", widget: "string" }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - label: "Services"
+        name: "services"
+        widget: "select"
+        multiple: true
+        options: ["Design", "Development", "Branding"]
+        default: ["Design"]
+      - label: 'Blocks'
+        name: 'projects'
+        widget: 'list'
+        types:
+          - label: 'Hero'
+            name: 'hero'
+            widget: object
+            fields:
+              - { label: 'Tagline', name: 'tagline', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Image Alt', name: 'alt', widget: 'string' }
+          - label: 'Intro'
+            name: 'intro'
+            widget: object
+            fields:
+              - { label: 'Content', name: 'content', widget: 'markdown' }
+              - { label: 'Client', name: 'client', widget: 'string' }
+              - { label: 'Client Link', name: 'clientlink', widget: 'string', required: false }
+              - { label: 'Year', name: 'year', widget: 'string' }
+              - label: 'Button'
+                name: 'button'
+                widget: 'object'
+                required: false
+                fields:
+                  - { label: 'Text', name: 'text', widget: 'string', required: false }
+                  - { label: 'Link', name: 'link', widget: 'string', required: false }
+      - *META

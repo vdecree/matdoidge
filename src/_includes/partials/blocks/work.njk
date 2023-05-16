@@ -1,0 +1,37 @@
+<section class="work [ pane flow flow-space-800 ]">
+    <div class="wrapper [ max-w-screen-lg ]">
+        <div class="work-head [ text-center grid ]">
+            <p class="eyebrow text-primary">{{ block.eyebrow }}</p>
+            <h3>{{ block.title }}</h3>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="work-list [ grid lg:gap-600 lg:grid-cols-12 ]">
+            {% for work in collections.work | reverse %}
+            {% if loop.index0 < 6 %}
+            <div class="work-list__item [ aspect-[16/11] relative rounded-lg lg:col-span-6 ]">
+                <div class="text [ flow flow-space-100 transition-all ease-in-out duration-200 ]">
+                    {% if work.data.services %}
+                    <p>
+                        {% for service in work.data.services %}
+                        {{ service }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </p>
+                    {% endif %}
+                    <h4>{{ work.data.title }}</h4>
+                </div>
+                <a href="{{ work.url }}">
+                    <span aria-hidden="true" class="absolute inset-0 z-40"></span>
+                </a>
+                <img src="{{ work.data.thumbnail }}" alt="">
+            </div>
+            {% endif %}
+            {% endfor%}
+        </div>
+        <div class="controls [ text-center mt-700 ]">
+            <a href="/work/" class="button" data-type="secondary">View more projects</a>
+        </div>
+            
+    </div>
+</section>

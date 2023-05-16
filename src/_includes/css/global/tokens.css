@@ -3,6 +3,9 @@
   --color-secondary: #054541;
   --color-light: #D9D9D9;
   --color-dark: #070707;
+  --color-darkgreen: #003837;
+  --size-0: 0;
+  --size-100: clamp(0.19rem, calc(0.11rem + 0.37vw), 0.38rem);
   --size-200: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
   --size-300: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem);
   --size-400: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
@@ -11,6 +14,7 @@
   --size-700: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem);
   --size-800: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem);
   --size-900: clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem);
+  --size-1000: clamp(7.88rem, calc(6.85rem + 5.12vw), 10.50rem);
   --text-200: clamp(1.00rem, calc(0.97rem + 0.16vw), 1.13rem);
   --text-300: clamp(1.13rem, calc(1.05rem + 0.35vw), 1.41rem);
   --text-400: clamp(1.27rem, calc(1.14rem + 0.62vw), 1.76rem);
@@ -59,6 +63,29 @@
   --leading-loose: 2
 }
 
+.absolute {
+  position: absolute
+}
+
+.relative {
+  position: relative
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+.z-40 {
+  z-index: 40
+}
+
+.mt-700 {
+  margin-top: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)
+}
+
 .block {
   display: block
 }
@@ -67,8 +94,24 @@
   display: flex
 }
 
+.grid {
+  display: grid
+}
+
+.aspect-\[16\/11\] {
+  aspect-ratio: 16/11
+}
+
+.max-w-6xl {
+  max-width: 72rem
+}
+
 .max-w-7xl {
   max-width: 80rem
+}
+
+.max-w-screen-lg {
+  max-width: 1024px
 }
 
 .flex-1 {
@@ -79,8 +122,20 @@
   flex-basis: 100%
 }
 
+.flex-row {
+  flex-direction: row
+}
+
 .flex-col {
   flex-direction: column
+}
+
+.content-end {
+  align-content: flex-end
+}
+
+.items-center {
+  align-items: center
 }
 
 .justify-end {
@@ -91,18 +146,112 @@
   justify-content: center
 }
 
+.justify-between {
+  justify-content: space-between
+}
+
+.gap-800 {
+  gap: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
+}
+
 .gap-x-200 {
   -moz-column-gap: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
        column-gap: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
+.rounded-lg {
+  border-radius: 0.5rem
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 69 65 / var(--tw-bg-opacity))
+}
+
+.text-center {
+  text-align: center
 }
 
 .text-1000 {
   font-size: clamp(2.57rem, calc(1.53rem + 5.18vw), 6.71rem)
 }
 
+.text-300 {
+  font-size: clamp(1.13rem, calc(1.05rem + 0.35vw), 1.41rem)
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(181 110 70 / var(--tw-text-opacity))
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+.duration-200 {
+  transition-duration: 200ms
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.flow-space-100 {
+  --flow-space: clamp(0.19rem, calc(0.11rem + 0.37vw), 0.38rem)
+}
+
+.flow-space-200 {
+  --flow-space: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
+.flow-space-300 {
+  --flow-space: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
+}
+
+.flow-space-800 {
+  --flow-space: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
+}
+
+@media (min-width: 768px) {
+  .md\:text-left {
+    text-align: left
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2
+  }
+
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6
+  }
+
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7
+  }
+
   .lg\:flex-initial {
     flex: 0 1 auto
+  }
+
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr))
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+
+  .lg\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr))
   }
 
   .lg\:flex-row {
@@ -111,5 +260,29 @@
 
   .lg\:items-center {
     align-items: center
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between
+  }
+
+  .lg\:gap-600 {
+    gap: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)
+  }
+
+  .lg\:gap-900 {
+    gap: clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem)
+  }
+
+  .lg\:gap-800 {
+    gap: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
+  }
+
+  .lg\:text-left {
+    text-align: left
   }
 }

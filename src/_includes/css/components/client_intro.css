@@ -1,0 +1,18 @@
+.client-intro{
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.client-intro h4{
+    color: var(--color-primary);
+}
+
+.client-intro__meta ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.client-intro__meta .eyebrow{
+    color: var(--color-primary);
+}

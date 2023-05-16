@@ -2,15 +2,38 @@
     text-transform: uppercase;
     letter-spacing: .2rem;
     color: currentColor;
-    border: 2px solid currentColor;
+    border: 2px solid var(--color-light);
     padding: var(--size-200) var(--size-400);
     border-radius: var(--rounded-lg);
     text-decoration: none;
     font-size: 1rem;
+    display: inline-block;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+}
+
+.button:hover{
+    background-color: var(--color-light);
+    color: var(--color-dark);
 }
 
 .button[data-type=secondary]{
     background-color: var(--color-secondary);
     border: 0;
     color: var(--color-light);
+}
+
+.button[data-type=secondary]:hover{
+    background-color: var(--color-primary);
+}
+
+.button[data-type=dark]{
+    background-color: var(--color-dark);
+    border: 0;
+    color: var(--color-light);
+}
+
+.button[data-type=dark]:hover{
+    background-color: var(--color-light);
+    color: var(--color-dark);
 }

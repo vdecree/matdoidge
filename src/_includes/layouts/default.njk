@@ -50,7 +50,31 @@
       {{ content | safe }}
     </main>
 
-    {# footer #}
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="wrapper">
+          <div class="[ grid gap-800 lg:grid-cols-12 ]">
+            <div class="content [ text-center lg:text-left flow lg:col-span-6 ]">
+              <p class="eyebrow">Discover New Horizons</p>
+              <h1>Let's create something truly extraordinary.</h1>
+              <a href="/contact" class="button" data-type="secondary">Begin Your Journey</a>
+            </div>
+
+            <div class="gfx [ flex lg:col-span-6 justify-center lg:justify-end ]">
+              {% include '../../img/magic-icon.svg' %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="wrapper">
+          <div class="flex justify-center lg:justify-between">
+            <div><p>Copyright Mat Doidge 2023. All rights reserved.</p></div>
+            <div><p>Powered by 11ty and Netlify CMS.</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
   </body>

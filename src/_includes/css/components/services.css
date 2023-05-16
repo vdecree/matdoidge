@@ -1,0 +1,38 @@
+.services{
+    color: var(--color-light);
+}
+
+.services .grid{
+    z-index: 100;
+}
+
+.services .bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.services .bg svg{ display: block; }
+
+.services .eyebrow{ color: var(--color-primary); }
+
+.services__specialism ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: var(--size-500);
+}
+
+.services__specialism ul li{
+    background-color: var(--color-darkgreen);
+    padding: var(--size-500);
+}
+
+.services__specialism ul li > div{
+    gap: var(--size-300);
+}
+
+.services__specialism img{
+    width: 4rem;
+}

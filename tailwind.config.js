@@ -22,7 +22,8 @@ module.exports = {
       primary: '#B56E46',
       secondary: '#054541',
       light: '#D9D9D9',
-      dark: '#070707'
+      dark: '#070707',
+      darkgreen: '#003837',
     },
     fontSize: {
       ///* https://utopia.fyi/type/calculator?c=320,16,1.125,1600,18,1.25,10,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */ 
@@ -43,10 +44,13 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
+      'xxl': '1378px',
       '2xl': '1536px'
     },
     spacing: {
       // https://utopia.fyi/space/calculator/?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l
+      0: 0,
+      100: 'clamp(0.19rem, calc(0.11rem + 0.37vw), 0.38rem)',
       200: 'clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)',
       300: 'clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)',
       400: 'clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)',
@@ -54,7 +58,8 @@ module.exports = {
       600: 'clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)',
       700: 'clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)',
       800: 'clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)',
-      900: 'clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem)'
+      900: 'clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem)',
+      1000: 'clamp(7.88rem, calc(6.85rem + 5.12vw), 10.50rem)',
     }
   },
   plugins: [

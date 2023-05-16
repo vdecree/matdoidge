@@ -16,7 +16,7 @@ h3,
 h4,
 h5 {
   font-weight: var(--font-medium);
-  line-height: var(--leading-none);
+  line-height: var(--leading-tight);
 }
 
 h1 {
@@ -28,15 +28,15 @@ h2 {
 }
 
 h3 {
-  font-size: var(--text-800);
+  font-size: var(--text-600);
 }
 
 h4 {
-  font-size: var(--text-900);
+  font-size: var(--text-500);
 }
 
 h5 {
-  font-size: var(--text-1000);
+  font-size: var(--text-400);
 }
 
 a {

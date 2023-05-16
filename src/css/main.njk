@@ -9,13 +9,18 @@ sitemapIgnore: true
 
   {% include '../_includes/css/components/button.css' %}
   {% include '../_includes/css/components/intro.css' %}
+  {% include '../_includes/css/components/services.css' %}
+  {% include '../_includes/css/components/client_intro.css' %}
+  {% include '../_includes/css/components/work.css' %}
 
   {% include '../_includes/css/composition/grid.css' %}
   {% include '../_includes/css/composition/stack.css' %}
   {% include '../_includes/css/composition/flow.css' %}
+  {% include '../_includes/css/composition/pane.css' %}
 
   {% include '../_includes/css/global/type.css' %}
   {% include '../_includes/css/global/tokens.css' %}
   {% include '../_includes/css/global/header.css' %}
+  {% include '../_includes/css/global/footer.css' %}
 {%- endset -%}
 {{ css | cssmin | safe }}

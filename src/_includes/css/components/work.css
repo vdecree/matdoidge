@@ -1,0 +1,46 @@
+.work .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: var(--size-400);
+    margin-bottom: 0;
+}
+
+.work .breakout-button{
+    z-index: 50;
+}
+
+.work-list{
+    color: var(--color-light);
+}
+
+.work .work-list__item{
+    overflow: hidden;
+}
+
+.work .work-list__item::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24rem;
+    background: rgb(30,30,30);
+    background: linear-gradient(180deg, rgba(30,30,30,0) 0%, rgba(30,30,30,.8) 100%);
+    z-index: 2;
+}
+
+.work-list__item:hover .text{
+    margin-bottom: var(--size-200);
+}
+
+.work-list__item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}

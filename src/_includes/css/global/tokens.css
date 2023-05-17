@@ -1,3 +1,15 @@
+.drop-shadow-4xl, .drop-shadow-xl {
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  
+}
+
 :root {
   --color-primary: #B56E46;
   --color-secondary: #054541;
@@ -146,10 +158,6 @@
   justify-content: center
 }
 
-.justify-between {
-  justify-content: space-between
-}
-
 .gap-800 {
   gap: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
@@ -183,6 +191,16 @@
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(181 110 70 / var(--tw-text-opacity))
+}
+
+.drop-shadow-4xl {
+  --tw-drop-shadow: drop-shadow(0 35px 35px rgba(0, 0, 0, 0.80)) drop-shadow(0 45px 65px rgba(0, 0, 0, 0.80));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
 }
 
 .transition-all {
@@ -222,6 +240,10 @@
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-10 {
+    grid-column: span 10 / span 10
+  }
+
   .lg\:col-span-2 {
     grid-column: span 2 / span 2
   }
@@ -236,6 +258,10 @@
 
   .lg\:col-span-7 {
     grid-column: span 7 / span 7
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2
   }
 
   .lg\:flex-initial {
@@ -276,10 +302,6 @@
 
   .lg\:gap-900 {
     gap: clamp(5.25rem, calc(3.79rem + 7.32vw), 9.00rem)
-  }
-
-  .lg\:gap-800 {
-    gap: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
   }
 
   .lg\:text-left {

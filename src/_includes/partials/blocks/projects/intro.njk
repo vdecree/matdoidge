@@ -18,9 +18,9 @@
                     </li>
                     <li>
                         <span class="eyebrow">Services</span>
-                        {% for service in block.services %}
-                        <p>{{ service }}</p>
-                        {% endfor %}
+                        <p>{% for service in services %}
+                        {{ service }}
+                        {% endfor %}</p>
                     </li>
                     <li>
                         <span class="eyebrow">Year</span>

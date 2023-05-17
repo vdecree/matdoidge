@@ -175,4 +175,11 @@ collections:
                 fields:
                   - { label: 'Text', name: 'text', widget: 'string', required: false }
                   - { label: 'Link', name: 'link', widget: 'string', required: false }
+          - label: 'Image Full'
+            name: 'imagefull'
+            widget: 'object'
+            fields:
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Alt', name: 'alt', widget: 'string' }
+              - { label: 'Background Hue', name: 'background', widget: 'string' }
       - *META

@@ -13,7 +13,7 @@
   </head>
   <body>
     {# header #}
-    <header class="site-header" aria-expanded="false">
+    <header class="site-header" data-color="{{ headerClasses|default("light", true) }}" aria-expanded="false">
       <div class="wrapper">
         <div class="site-header__cont [ stack ]">
         <button class="menu-toggle" data-menu-toggle="false" aria-label="Toggle Menu">

@@ -3,9 +3,9 @@
     color: var(--color-light);
 }
 
-.client-intro h4{
+/* .client-intro h4{
     color: var(--color-primary);
-}
+} */
 
 .client-intro__meta ul{
     margin: 0;

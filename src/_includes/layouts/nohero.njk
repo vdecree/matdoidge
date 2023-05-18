@@ -1,0 +1,9 @@
+---
+layout: layouts/default.njk
+eleventyComputed:
+  headerClasses: "dark"
+---
+
+{% asyncEach block in blocks %}
+  {% include '../partials/blocks/' + block.type + '.njk' %}
+{% endeach %}

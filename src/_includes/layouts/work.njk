@@ -6,8 +6,25 @@ layout: layouts/default.njk
   {% include '../partials/blocks/projects/' + block.type + '.njk' %}
 {% endeach %}
 
-
-{% set previousPost = collections.work | getPreviousCollectionItem %}
+{# fetches the next post but also ensures we endless loop through the projects so that there is always a next project link #}
 {% set nextPost = collections.work | getNextCollectionItem %}
-{% if previousPost %}Previous Project: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
-{% if nextPost %}Next Project: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+{% set nextPost = nextPost | default(collections.work[0]) %}
+
+{# only appears when more than one project #}
+{% if nextPost %}
+<section class="projects-more relative">
+  <div class="projects-more__nav">
+    <div class="wrapper">
+      <div class="lg:flex lg:justify-between lg:items-center z-20 lg:px-1000 text-center">
+        <div><p class="eyebrow">Next Project</p></div>
+        <div><h2>{{ nextPost.data.title }}</h2></div>
+      </div>
+      <a href="{{ nextPost.url }}">
+          <span aria-hidden="true" class="absolute inset-0 z-40"></span>
+      </a>
+    </div>
+    
+    <img src="{{ nextPost.data.thumbnail }}" alt="{{ nextPost.data.alt }}">
+  </div>
+</section>
+{% endif %}

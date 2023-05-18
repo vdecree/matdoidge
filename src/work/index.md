@@ -1,5 +1,5 @@
 ---
-layout: layouts/work.njk
+layout: layouts/nohero.njk
 title: Work
 eleventyNavigation:
   key: Work

@@ -182,4 +182,19 @@ collections:
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Alt', name: 'alt', widget: 'string' }
               - { label: 'Background Hue', name: 'background', widget: 'string' }
+          - label: 'Image Double'
+            name: 'imagedouble'
+            widget: 'object'
+            fields:
+              - { label: 'Image', name: 'imageone', widget: 'image' }
+              - { label: 'Alt', name: 'altone', widget: 'string' }
+              - { label: 'Image', name: 'imagetwo', widget: 'image' }
+              - { label: 'Alt', name: 'alttwo', widget: 'string' }
+              - { label: 'Background Hue', name: 'background', widget: 'string' }
+          - label: 'Text'
+            name: 'text'
+            widget: 'object'
+            fields:
+              - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
+              - { label: 'Content', name: 'content', widget: 'markdown' }
       - *META

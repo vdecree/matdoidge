@@ -5,3 +5,9 @@ layout: layouts/default.njk
 {% asyncEach block in projects %}
   {% include '../partials/blocks/projects/' + block.type + '.njk' %}
 {% endeach %}
+
+
+{% set previousPost = collections.work | getPreviousCollectionItem %}
+{% set nextPost = collections.work | getNextCollectionItem %}
+{% if previousPost %}Previous Project: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+{% if nextPost %}Next Project: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}

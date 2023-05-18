@@ -1,17 +1,17 @@
 <section class="client-intro [ pane ]">
     <div class="wrapper [ max-w-6xl ]">
-        <div class="grid [ lg:gap-900 lg:grid-cols-8 ]">
-            <div class="client-intro__overview [ lg:col-span-6 flow ]">
+        <div class="grid [ lg:gap-900 md:grid-cols-8 ]">
+            <div class="client-intro__overview [ md:col-span-6 flow ]">
                 {{ block.content | markdown | safe }}
                 {% if block.button %}<a class="button" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
             </div>
 
-            <div class="client-intro__meta [ lg:col-span-2 ]">
+            <div class="client-intro__meta [ md:col-span-2 ]">
                 <ul class="flow">
                     <li>
                         <span class="eyebrow">Client</span>
                         {% if block.clientlink %}
-                        <a href="{{ block.clientlink }}"><p>{{ block.client }}</p></a>
+                        <a class="has-link" href="{{ block.clientlink }}"><p class="flex">{{ block.client }} {% include '../../../../img/link-icon.svg' %}</p> </a>
                         {% else %}
                         <p>{{ block.client }}</p>
                         {% endif %}

@@ -16,3 +16,13 @@
 .client-intro__meta .eyebrow{
     color: var(--color-primary);
 }
+
+.client-intro__meta svg{
+    width: 1.8rem;
+    height: auto;
+    fill: var(--color-light);
+}
+
+.client-intro__meta .has-link p{
+    gap: var(--size-100);
+}

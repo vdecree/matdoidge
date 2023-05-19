@@ -66,7 +66,7 @@
 .hero{
     position: relative;
     color: var(--color-light);
-    padding: calc(24vh + var(--size-900)) 0 ;
+    padding: calc(16vh + var(--size-900)) 0 ;
     text-align: center;
 }
 
@@ -165,6 +165,15 @@
     order: 3;
     align-self: center;
 }
+
+.site-header[data-color="dark"] .menu-toggle{
+    color: var(--color-dark);
+}
+
+.site-header[data-color="dark"][aria-expanded="true"] .menu-toggle{
+    color: var(--color-light);
+}
+
 .menu-toggle__line {
     position:absolute;
     width:100%;
@@ -210,6 +219,9 @@
 }
 
 @media (min-width:64em) {
+    .hero{
+        padding: calc(24vh + var(--size-900)) 0 ;
+    }
     .site-header__nav {
         display:initial;
     }

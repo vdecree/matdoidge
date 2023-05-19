@@ -85,16 +85,24 @@
   left: 0
 }
 
-.z-40 {
-  z-index: 40
-}
-
 .z-20 {
   z-index: 20
 }
 
+.z-40 {
+  z-index: 40
+}
+
 .mt-700 {
   margin-top: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)
+}
+
+.mb-500 {
+  margin-bottom: clamp(1.31rem, calc(0.95rem + 1.83vw), 2.25rem)
+}
+
+.mb-800 {
+  margin-bottom: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
 .block {
@@ -133,6 +141,10 @@
   flex-basis: 100%
 }
 
+.list-none {
+  list-style-type: none
+}
+
 .flex-row {
   flex-direction: row
 }
@@ -157,10 +169,6 @@
   justify-content: center
 }
 
-.justify-between {
-  justify-content: space-between
-}
-
 .gap-800 {
   gap: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
@@ -179,14 +187,8 @@
   background-color: rgb(5 69 65 / var(--tw-bg-opacity))
 }
 
-.px-500 {
-  padding-left: clamp(1.31rem, calc(0.95rem + 1.83vw), 2.25rem);
-  padding-right: clamp(1.31rem, calc(0.95rem + 1.83vw), 2.25rem)
-}
-
-.px-1000 {
-  padding-left: clamp(7.88rem, calc(6.85rem + 5.12vw), 10.50rem);
-  padding-right: clamp(7.88rem, calc(6.85rem + 5.12vw), 10.50rem)
+.p-0 {
+  padding: 0
 }
 
 .text-center {
@@ -251,16 +253,16 @@
     grid-column: span 6 / span 6
   }
 
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4
+  }
+
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr))
   }
 
-  .md\:items-center {
-    align-items: center
-  }
-
-  .md\:justify-between {
-    justify-content: space-between
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr))
   }
 
   .md\:text-left {

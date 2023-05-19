@@ -73,13 +73,64 @@ blocks: &BLOCKS
             - { label: 'Service Name', name: 'servicename', widget: 'string' }
             - { label: 'Icon', name: 'icon', widget: 'image' }
             - { label: 'Text', name: 'text', widget: 'markdown' }
-            - { label: 'Link', name: 'link', widget: 'string', required: false }
+            - { label: 'Link', name: 'link', widget: 'string', default: '/specialization', required: false }
     - label: 'Work'
       name: 'work'
       widget: 'object'
       fields:
         - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
         - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Count', name: 'count', widget: 'string' }
+        - { label: 'Show Button', name: 'showbutton', widget: 'boolean' }
+    - label: 'Specialization'
+      name: 'specialization'
+      widget: 'object'
+      fields:
+        - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
+        - { label: 'Content', name: 'content', widget: 'markdown' }
+        - label: 'Tools'
+          name: 'tools'
+          widget: list
+          collapsed: true
+          required: false
+          fields:
+            - { label: 'Program Name', name: 'toolname', widget: 'string' }
+        - label: 'Skills'
+          name: 'skills'
+          widget: list
+          collapsed: true
+          required: false
+          fields:
+            - { label: 'Skill Name', name: 'skillname', widget: 'string' }
+        - label: 'Button'
+          name: 'button'
+          widget: 'object'
+          required: false
+          fields:
+            - { label: 'Text', name: 'text', widget: 'string', required: false }
+            - { label: 'Link', name: 'link', widget: 'string', required: false }
+    - label: 'Offerings'
+      name: 'offerings'
+      widget: 'object'
+      fields:
+        - { label: 'Eyebrow', name: 'eyebrow', widget: 'string' }
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - label: 'Button'
+          name: 'button'
+          widget: 'object'
+          required: false
+          fields:
+            - { label: 'Text', name: 'text', widget: 'string', required: false }
+            - { label: 'Link', name: 'link', widget: 'string', required: false }
+        - label: 'Services'
+          name: 'services'
+          widget: list
+          collapsed: true
+          required: false
+          fields:
+            - { label: 'Service Name', name: 'servicename', widget: 'string' }
+            - { label: 'Icon', name: 'icon', widget: 'image' }
+            - { label: 'Content', name: 'content', widget: 'markdown' }
 
 meta: &META
   label: 'Meta'

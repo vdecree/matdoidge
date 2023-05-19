@@ -1,0 +1,23 @@
+.offerings{
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+}
+
+.offerings ul{  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.offerings ul li{
+    background-color: var(--color-darkgreen);
+    padding: var(--size-500);
+}
+
+.offerings ul li > div{
+    gap: var(--size-300);
+}
+
+.offerings ul li img{
+    width: 4rem;
+}

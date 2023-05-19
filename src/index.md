@@ -9,7 +9,7 @@ blocks:
     buttons:
       - text: View My Work
         link: "#"
-    image: /uploads/hero.jpg
+    image: /uploads/hero-new.jpg
   - type: intro
     eyebrow: uncover hidden opportunities
     title: For over 10 years I have embolden the cautious & championed the brave.
@@ -28,7 +28,7 @@ blocks:
     content: Let me help you tell your story and connect with your audience.
     button:
       text: Embark Now
-      link: "#"
+      link: /contact
     specialism:
       - servicename: Web Design
         icon: /uploads/figma-icon.svg
@@ -40,19 +40,21 @@ blocks:
         icon: /uploads/figma-icon.svg
         text: Crafting visually stunning, user-friendly websites that reflect your brand
           and drive conversions.
-        link: "#"
+        link: ""
       - servicename: Development
         icon: /uploads/code-icon.svg
         text: Bringing your website to life with cutting-edge technology and custom
           functionality.
-        link: "#"
+        link: ""
       - servicename: Branding
         icon: /uploads/branding-icon.svg
         text: Elevating your brand's identity and messaging to stand out in a crowded
           digital landscape.
-        link: "#"
+        link: ""
   - type: work
-    eyebrow: My Work
+    eyebrow: My Projects
     title: I’m passionate about designing digital experiences that meet the demands
       of the modern world.
+    count: "2"
+    showbutton: true
 ---

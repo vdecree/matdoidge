@@ -1,0 +1,17 @@
+---
+layout: layouts/default.njk
+eleventyComputed:
+  headerClasses: "dark"
+---
+
+{% set block = {
+  eyebrow: 'My Projects',
+  title: 'I’m passionate about designing digital experiences that meet the demands of the modern world.',
+  count: '6',
+  showbutton: false
+} %}
+{% include '../partials/blocks/work.njk' %}
+
+{% asyncEach block in blocks %}
+  {% include '../partials/blocks/' + block.type + '.njk' %}
+{% endeach %}

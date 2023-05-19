@@ -1,0 +1,22 @@
+<section class="specialization [ pane ]">
+    <div class="wrapper [ max-w-6xl ]">
+        <div class="grid [ lg:gap-900 md:grid-cols-8 ]">
+            <div class="specialization__content [ md:col-span-6 flow ]">
+                <p class="eyebrow">{{ block.eyebrow }}</p>
+                {{ block.content | markdown | safe }}
+                {% if block.button %}<a class="button" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
+            </div>
+
+            <div class="specialization__details [ md:col-span-2 ]">
+                <p class="eyebrow">Tools</p>
+                <ul class="p-0 list-none">{% for tool in block.tools %}
+                    <li>{{ tool.toolname }}</li>
+                {% endfor %}</ul>
+                <p class="eyebrow">Skills</p>
+                <ul class="p-0 list-none">{% for skill in block.skills %}
+                    <li>{{ skill.skillname }}</li>
+                {% endfor %}</ul>
+            </div>
+        </div>
+    </div>
+</section>

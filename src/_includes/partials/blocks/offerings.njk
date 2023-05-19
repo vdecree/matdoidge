@@ -1,0 +1,26 @@
+<section class="offerings [ pane ]">
+    <div class="wrapper [ max-w-screen-lg mb-800 ]">
+        <div class="grid">
+            <div class="text [ flow text-center ]">
+                <p class="eyebrow">{{ block.eyebrow }}</p>
+                <h3>{{ block.title }}</h3>
+                {% if block.button %}<a class="button" data-type="dark" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div>
+            <ul class="grid [ md:grid-cols-12 ]">
+            {% for service in block.services %}
+                <li class="[ md:col-span-4 flow flow-space-300 rounded-lg ]">
+                    <div class="[ flex gap-4 flex-row items-center ]">
+                        <img src="{{ service.icon }}"/>
+                        <h5>{{ service.servicename }}</h5>
+                    </div>
+                    {{ service.content | markdown | safe }}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

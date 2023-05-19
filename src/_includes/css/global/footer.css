@@ -1,6 +1,8 @@
 .site-footer{
     background-color: var(--color-dark);
     color: var(--color-light);
+    position: sticky;
+    bottom: 0;
 }
 
 .site-footer .eyebrow{
@@ -17,8 +19,26 @@
     opacity: .3;
 }
 
+@keyframes bounce {
+0%,
+    100% {
+        transform:translateY(-10%);
+        animation-timing-function:cubic-bezier(.2,.2,.2,.2)
+    }
+    50% {
+        transform:translateY(0);
+        animation-timing-function:cubic-bezier(1,1,1,1)
+    }
+}
+
 .site-footer__top .gfx svg{
     width: 14rem;
     height: auto;
     fill: var(--color-light);
+    animation: bounce 3s infinite;
+}
+
+.main-content{
+    position: relative;
+    z-index: 1;
 }

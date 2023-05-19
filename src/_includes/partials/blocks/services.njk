@@ -3,7 +3,7 @@
         <div class="grid [ items-center lg:grid-cols-12 gap-800 ]">
             <div class="services__text [ lg:col-span-7 text-center md:text-left ]">
                 <div class="flow">
-                    <div class="eyebrow">{{ block.eyebrow }}</div>
+                    {# <div class="eyebrow">{{ block.eyebrow }}</div> #}
                     <h2>{{ block.title }}</h2>
                     {{ block.content | markdown | safe }}
                     <a href="{{ block.button.link }}" data-type="dark" class="button">{{ block.button.text }}</a>

@@ -6,7 +6,7 @@
             </div>
             <div class="intro__text [ lg:col-span-2 ]">
                 <div class="flow">
-                    <p class="eyebrow [ color-primary ]">{{ block.eyebrow }}</p>
+                    {# <p class="eyebrow [ color-primary ]">{{ block.eyebrow }}</p> #}
                     <h2>{{ block.title }}</h2>
                     {{ block.content | markdown | safe }}
                     <a class="button" data-type="secondary" href="{{ block.button.link }}">{{ block.button.text }}</a>

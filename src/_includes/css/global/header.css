@@ -70,6 +70,10 @@
     text-align: center;
 }
 
+.hero .eyebrow{
+    color: var(--color-light);
+}
+
 .hero[data-type="project"]{
     text-align: left;
     padding: calc(35rem + var(--size-900)) 0 var(--size-800) 0;

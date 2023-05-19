@@ -66,7 +66,7 @@
 .hero{
     position: relative;
     color: var(--color-light);
-    padding: calc(20rem + var(--size-900)) 0 ;
+    padding: calc(24vh + var(--size-900)) 0 ;
     text-align: center;
 }
 
@@ -119,12 +119,28 @@
     z-index:-2;
 }
 
+@keyframes bounce {
+0%,
+    100% {
+        transform:translateY(-10%);
+        animation-timing-function:cubic-bezier(.2,.2,.2,.2)
+    }
+    50% {
+        transform:translateY(0);
+        animation-timing-function:cubic-bezier(1,1,1,1)
+    }
+}
+
 .hero .icon{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 70%);
     bottom: 0;
+}
+
+.hero .icon svg{
+    animation: bounce 3s infinite;
 }
 
 .site-header__cont .action{

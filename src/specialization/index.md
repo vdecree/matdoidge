@@ -22,6 +22,9 @@ blocks:
       - skillname: HTML
       - skillname: CSS
       - skillname: Javascript
+    button:
+      text: Lets get started
+      link: /contact
   - type: offerings
     eyebrow: Optimized for long-term success
     title: Let me help you tell your story and connect with your audience.

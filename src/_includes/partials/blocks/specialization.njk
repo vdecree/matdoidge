@@ -4,7 +4,7 @@
             <div class="specialization__content [ md:col-span-6 flow ]">
                 <p class="eyebrow">{{ block.eyebrow }}</p>
                 {{ block.content | markdown | safe }}
-                {% if block.button %}<a class="button" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
+                {% if block.button.text %}<a class="button" data-type="dark" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
             </div>
 
             <div class="specialization__details [ md:col-span-2 ]">

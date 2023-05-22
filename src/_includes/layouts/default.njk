@@ -52,31 +52,35 @@
       {{ content | safe }}
     </main>
     </div>
-    <footer class="site-footer">
+    <div class="site-footer-wrap">
+    <footer class="site-footer w-full flex flex-col">
       <div class="site-footer__top">
         <div class="wrapper">
-          <div class="[ grid gap-800 lg:grid-cols-12 ]">
-            <div class="content [ text-center lg:text-left flow lg:col-span-6 ]">
-              {# <p class="eyebrow">Discover New Horizons</p> #}
-              <h1>Let's create something truly extraordinary.</h1>
-              <a href="/contact" class="button" data-type="secondary">Begin Your Journey</a>
+          {# <div class="[ grid gap-500 lg:grid-cols-12 ]"> #}
+          <div class="[ flex justify-center flex-col h-screen justify-between ]">
+            <div></div>
+
+            <div class="flex gap-800 flex-col lg:flex-row">
+              <div class="content [ text-center lg:text-left flow lg:col-span-7 ]">
+                {# <p class="eyebrow">Discover New Horizons</p> #}
+                <h1 class="text-900">Let's create something truly extraordinary.</h1>
+                <a href="/contact" class="button" data-type="secondary">Begin Your Journey</a>
+              </div>
+
+              <div class="gfx [ flex py-600 lg:py-0 lg:col-span-5 justify-center lg:justify-end ]">
+                {% include '../../img/magic-icon.svg' %}
+              </div>
             </div>
 
-            <div class="gfx [ flex lg:col-span-6 justify-center lg:justify-end ]">
-              {% include '../../img/magic-icon.svg' %}
+            <div class="footer-bottom flex justify-center flex-col lg:flex-row text-center lg:justify-between">
+              <div><p>Copyright Mat Doidge 2023. All rights reserved.</p></div>
+              <div><p>Powered by 11ty and Netlify CMS.</p></div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="site-footer__bottom">
-        <div class="wrapper">
-          <div class="flex justify-center lg:justify-between">
-            <div><p>Copyright Mat Doidge 2023. All rights reserved.</p></div>
-            <div><p>Powered by 11ty and Netlify CMS.</p></div>
           </div>
         </div>
       </div>
     </footer>
+    </div>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
   </body>

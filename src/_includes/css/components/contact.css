@@ -1,0 +1,77 @@
+form{
+    color: var(--color-dark);
+    padding: var(--size-600);
+}
+
+form fieldset{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+form fieldset legend, .field  label{
+    /* font-size: var(--text-200); */
+}
+
+form .head{
+    font-size: var(--text-500);
+    color: var(--color-primary);
+}
+
+form .field{
+    display: flex;
+    flex-direction: column;
+    --flow-space: var(--size-200);
+}
+
+form .option{
+    position: relative;
+}
+
+.contact .work-head{
+    color: var(--color-light);
+}
+
+.option label {
+    position:relative;
+    cursor:pointer;
+    height:6rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    overflow:hidden;
+    transition:all .4s;
+    padding:1rem;
+}
+
+.option input[type=checkbox],
+.option input[type=radio] {
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    width:1px;
+}
+
+form .option label,
+form input,
+form textarea {
+    background-color:var(--color-light);
+    color: var(--color-dark);
+    border-radius: var(--rounded-lg);
+    border: 2px solid var(--color-dark);
+    padding: var(--size-200);
+}
+
+form .option input[type=checkbox]:checked+label,
+form .option input[type=radio]:checked+label {
+    border-color:var(--color-dark);
+    background:var(--color-dark);
+    color:var(--color-light);
+}
+
+.contact form .button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    cursor: pointer;
+}

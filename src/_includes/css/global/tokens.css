@@ -94,12 +94,21 @@
   z-index: 40
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
 .mb-800 {
   margin-bottom: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
 .mt-700 {
   margin-top: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)
+}
+
+.mt-800 {
+  margin-top: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
 .block {
@@ -114,8 +123,24 @@
   display: grid
 }
 
+.inline-grid {
+  display: inline-grid
+}
+
 .aspect-\[16\/11\] {
   aspect-ratio: 16/11
+}
+
+.h-screen {
+  height: 100vh
+}
+
+.min-h-full {
+  min-height: 100%
+}
+
+.w-full {
+  width: 100%
 }
 
 .max-w-6xl {
@@ -142,6 +167,14 @@
   list-style-type: none
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr))
+}
+
 .flex-row {
   flex-direction: row
 }
@@ -166,13 +199,33 @@
   justify-content: center
 }
 
+.justify-between {
+  justify-content: space-between
+}
+
 .gap-800 {
   gap: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
+}
+
+.gap-400 {
+  gap: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)
+}
+
+.gap-600 {
+  gap: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)
+}
+
+.gap-500 {
+  gap: clamp(1.31rem, calc(0.95rem + 1.83vw), 2.25rem)
 }
 
 .gap-x-200 {
   -moz-column-gap: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
        column-gap: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
+.gap-y-400 {
+  row-gap: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)
 }
 
 .rounded-lg {
@@ -189,8 +242,33 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity))
+}
+
 .p-0 {
   padding: 0
+}
+
+.py-400 {
+  padding-top: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+  padding-bottom: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0
+}
+
+.py-600 {
+  padding-top: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem);
+  padding-bottom: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)
+}
+
+.py-700 {
+  padding-top: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem);
+  padding-bottom: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)
 }
 
 .text-center {
@@ -203,6 +281,14 @@
 
 .text-300 {
   font-size: clamp(1.13rem, calc(1.05rem + 0.35vw), 1.41rem)
+}
+
+.text-900 {
+  font-size: clamp(2.28rem, calc(1.51rem + 3.85vw), 5.36rem)
+}
+
+.text-200 {
+  font-size: clamp(1.00rem, calc(0.97rem + 0.16vw), 1.13rem)
 }
 
 .text-primary {
@@ -246,6 +332,13 @@
   --flow-space: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
+@media (min-width: 640px) {
+  .sm\:py-400 {
+    padding-top: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem);
+    padding-bottom: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-2 {
     grid-column: span 2 / span 2
@@ -265,6 +358,22 @@
 
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr))
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr))
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+  }
+
+  .md\:flex-row {
+    flex-direction: row
+  }
+
+  .md\:flex-col {
+    flex-direction: column
   }
 
   .md\:text-left {
@@ -317,6 +426,10 @@
     grid-template-columns: repeat(3, minmax(0, 1fr))
   }
 
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr))
+  }
+
   .lg\:flex-row {
     flex-direction: row
   }
@@ -344,6 +457,11 @@
   .lg\:px-1000 {
     padding-left: clamp(7.88rem, calc(6.85rem + 5.12vw), 10.50rem);
     padding-right: clamp(7.88rem, calc(6.85rem + 5.12vw), 10.50rem)
+  }
+
+  .lg\:py-0 {
+    padding-top: 0;
+    padding-bottom: 0
   }
 
   .lg\:text-left {

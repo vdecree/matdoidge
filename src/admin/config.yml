@@ -131,6 +131,16 @@ blocks: &BLOCKS
             - { label: 'Service Name', name: 'servicename', widget: 'string' }
             - { label: 'Icon', name: 'icon', widget: 'image' }
             - { label: 'Content', name: 'content', widget: 'markdown' }
+    - label: 'Contact'
+      name: 'contact'
+      widget: 'object'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'text' }
+    - label: 'Text'
+      name: 'text'
+      widget: 'object'
+      fields:
+        - { label: 'Content', name: 'content', widget: 'markdown' }
 
 meta: &META
   label: 'Meta'

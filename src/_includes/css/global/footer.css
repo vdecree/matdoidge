@@ -1,7 +1,7 @@
 .site-footer{
     background-color: var(--color-dark);
     color: var(--color-light);
-    position: sticky;
+    position: fixed;
     bottom: 0;
 }
 
@@ -10,11 +10,11 @@
 }
 
 .site-footer__top{
-    padding: calc(8rem + var(--size-1000)) 0 var(--size-1000);
+    padding: calc(10vh + var(--size-1000)) 0 var(--size-500) 0;
 }
 
-.site-footer__bottom{
-    padding-bottom: var(--size-800);
+.footer-bottom{
+    /* padding-bottom: var(--size-800); */
     font-size: calc(-.2rem + var(--text-200));
     opacity: .3;
 }
@@ -41,4 +41,8 @@
 .main-content{
     position: relative;
     z-index: 1;
+}
+
+.site-footer-wrap{
+    margin-bottom: 100vh;
 }

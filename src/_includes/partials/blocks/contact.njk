@@ -1,0 +1,106 @@
+<section class="contact [ pane bg-secondary ]">
+    <div class="wrapper [ max-w-screen-lg ]">
+        <div class="work-head [ text-center grid ]">
+            <h3>{{ block.title }}</h3>
+        </div>
+    </div>
+
+    <div class="wrapper [ max-w-6xl ]">
+        <div class="stack">
+            <form class="[ mt-800 bg-light rounded-lg flow ]" action="/contact/success" name="contact" method="POST" data-netlify="true">
+                <fieldset class="[ flow ]">
+                    <legend class="head">Project Details</legend>
+                    <div>
+                    <fieldset class="[ flow flow-space-200 ]">
+                        <legend>What is your budget?</legend>
+                        <div class="grid gap-400 md:grid-cols-4 lg:grid-cols-5">
+                            <div class="option">
+                                <input id="500-1000" type="radio" name="budget" value="£500-£1000">
+                                <label for="500-1000">£500-£1000</label>
+                            </div>
+                            <div class="option">
+                                <input id="1000-2000" type="radio" name="budget" value="£1000-£2000">
+                                <label for="1000-2000">£1000-£2000</label>
+                            </div>
+                            <div class="option">
+                                <input id="2000-3000" type="radio" name="budget" value="£2000-£3000">
+                                <label for="2000-3000">£2000-£3000</label>
+                            </div>
+                            <div class="option">
+                                <input id="3000-4000" type="radio" name="budget" value="£3000-£4000">
+                                <label for="3000-4000">£3000-£4000</label>
+                            </div>
+                            <div class="option">
+                                <input id="5000" type="radio" name="budget" value="£5000+">
+                                <label for="5000">£5000+</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </div>
+                    <div>
+                    <fieldset class="[ flow flow-space-200 ]">
+                        <legend>What type of project?</legend>
+                        <div class="grid gap-400 md:grid-cols-4 lg:grid-cols-5">
+                            <div class="option">
+                                <input id="design" type="checkbox" name="type" value="Website Design">
+                                <label for="design">Web Design</label>
+                            </div>
+                            <div class="option">
+                                <input id="development" type="checkbox" name="type" value="Website Development">
+                                <label for="development">Web Development</label>
+                            </div>
+                            <div class="option">
+                                <input id="branding" type="checkbox" name="type" value="Branding">
+                                <label for="branding">Branding</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    </div>
+                    <div>
+                        <div class="field [ flow ]">
+                            <label for="overview">Tell me a little about the project</label>
+                            <textarea name="overview" id="overview" cols="30" rows="6"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="field [ flow ]">
+                            <label for="pages">If you're looking for a website, can you tell me what pages you require?</label>
+                            <textarea name="pages" id="pages" cols="30" rows="6"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="[ flow ]">
+                    <legend class="head">Personal Details</legend>
+
+                    <div>
+                        <div class="field [ flow ]">
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" required="true">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="field [ flow ]">
+                            <label for="email">Email*</label>
+                            <input type="text" id="email" name="email" required="true">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="field [ flow ]">
+                            <label for="phone">Phone*</label>
+                            <input type="text" id="phone" name="phone" required="true">
+                        </div>
+                    </div>
+
+                    <div>      
+                        <input type="text" name="scrambled_eggs" class="visually-hidden" tabindex="-1" autocomplete="off">
+                        <button type="submit" data-type="dark" class="button">Send Project</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>

@@ -57,19 +57,20 @@
       <div class="site-footer__top">
         <div class="wrapper">
           {# <div class="[ grid gap-500 lg:grid-cols-12 ]"> #}
-          <div class="[ flex justify-center flex-col h-screen justify-between ]">
+          <div class="[ flex justify-center flex-col h-screen justify-between m-y-400 ]">
             <div></div>
 
-            <div class="flex gap-800 flex-col lg:flex-row">
-              <div class="content [ text-center lg:text-left flow lg:col-span-7 ]">
+            <div class="flex gap-600 flex-col justify-center content-center justify-items-center">
+              <div class="gfx [ flex py-600 lg:py-0 lg:col-span-5 justify-center ]">
+                {% include '../../img/magic-icon.svg' %}
+              </div>
+              
+              <div class="content [ text-center flow ]">
                 {# <p class="eyebrow">Discover New Horizons</p> #}
-                <h1 class="text-900">Let's create something truly extraordinary.</h1>
+                <h1 class="text-800">Let's create something truly extraordinary.</h1>
                 <a href="/contact" class="button" data-type="secondary">Begin Your Journey</a>
               </div>
 
-              <div class="gfx [ flex py-600 lg:py-0 lg:col-span-5 justify-center lg:justify-end ]">
-                {% include '../../img/magic-icon.svg' %}
-              </div>
             </div>
 
             <div class="footer-bottom flex justify-center flex-col lg:flex-row text-center lg:justify-between">

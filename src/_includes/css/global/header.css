@@ -17,6 +17,7 @@
 
 .site-header[data-color="dark"][aria-expanded="false"]{
     color: var(--color-dark);
+    background-color: var(--color-white);
 }
 
 .site-header[data-color="dark"][aria-expanded="false"] .logo svg{

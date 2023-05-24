@@ -141,6 +141,12 @@ blocks: &BLOCKS
       widget: 'object'
       fields:
         - { label: 'Content', name: 'content', widget: 'markdown' }
+    - label: 'Alert'
+      name: 'alert'
+      widget: 'object'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Content', name: 'content', widget: 'markdown' }
 
 meta: &META
   label: 'Meta'

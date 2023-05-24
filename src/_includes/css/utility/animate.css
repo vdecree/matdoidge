@@ -1,0 +1,48 @@
+@keyframes rotating {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotatingRev {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.rotatingRev {
+    /* transform: translate(100,100); */
+    animation: rotatingRev 12s linear infinite;
+    transform-origin: center;
+}
+
+.rotating {
+    transform: translate(100,100);
+    animation: rotating 6s linear infinite;
+    transform-origin: center;
+}
+
+#rotatingText {
+    animation-name: rotate-circle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotate-circle {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+.icon-globe{
+    width: 24rem;
+    height: auto;
+    fill: var(--color-dark);
+}

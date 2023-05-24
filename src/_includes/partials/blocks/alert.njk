@@ -1,0 +1,9 @@
+<section class="alert [ pane bg-white ]">
+    <div class="wrapper [ max-w-screen-lg ]">
+        <div class="alert__content [ flow text-center ]">
+            {% include '../../../img/logo-icon-globe.svg' %}
+            <h1 class="[ text-1000 ]">{{ block.title }}</h1>
+            {{ block.content | markdown | safe }}
+        </div>
+    </div>
+</section>

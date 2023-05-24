@@ -1,9 +1,9 @@
-<section class="hero [ relative ]" data-type="project">
-    <div class="wrapper min-h-full">
-        <div class="hero-content [ flex flex-col content-end justify-end ]">
-            <div class="[ flow flow-space-200 py-700 ]">
-                <h1>{{ title }}</h1>
-                <p class="text-300">{{ block.tagline }}</p>
+<section class="hero [ relative bg-dark ]" data-type="project">
+    <div class="wrapper [ min-h-full max-w-7xl ]">
+        <div class="hero-content [ flex flex-col content-bottom justify-end ]">
+            <div class="[ flow flow-space-200 ]">
+                <p class="[ text-400 ]">&mdash; {{ title }}</p>
+                <h1 class="text-800">{{ block.tagline }}</h1>
             </div>
         </div>
         <img class="hero__background" src="{{ block.image }}" alt="{{ block.alt }}">

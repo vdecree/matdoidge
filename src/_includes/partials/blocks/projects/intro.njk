@@ -1,15 +1,15 @@
 <section class="client-intro [ pane ]">
-    <div class="wrapper [ max-w-6xl ]">
+    <div class="wrapper [ max-w-7xl ]">
         <div class="grid [ lg:gap-900 md:grid-cols-8 ]">
             <div class="client-intro__overview [ md:col-span-6 flow ]">
                 {{ block.content | markdown | safe }}
-                {% if block.button %}<a class="button" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
+                {% if block.button %}<a class="button" data-type="dark" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
             </div>
 
             <div class="client-intro__meta [ md:col-span-2 ]">
-                <ul class="flow">
+                <ul class="[ flow flow-space-400 ]">
                     <li>
-                        <span class="eyebrow">Client</span>
+                        <p class="font-bold">Client</p>
                         {% if block.clientlink %}
                         <a class="has-link" href="{{ block.clientlink }}"><p class="flex">{{ block.client }} {% include '../../../../img/link-icon.svg' %}</p> </a>
                         {% else %}
@@ -17,13 +17,13 @@
                         {% endif %}
                     </li>
                     <li>
-                        <span class="eyebrow">Services</span>
+                        <p class="font-bold">Services</p>
                         <p>{% for service in services %}
-                        {{ service }}
+                        {{ service }}{% if not loop.last %}, {% endif %}
                         {% endfor %}</p>
                     </li>
                     <li>
-                        <span class="eyebrow">Year</span>
+                        <p class="font-bold">Year</p>
                         <p>{{ block.year }}</p>
                     </li>
                 </ul>

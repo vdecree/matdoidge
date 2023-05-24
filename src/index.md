@@ -57,4 +57,9 @@ blocks:
       of the modern world.
     count: "2"
     showbutton: true
+meta:
+  title: Freelance Web Designer in Gloucester & UK | Mat Doidge
+  desc: I'm Mat, a seasoned freelance web designer and developer specializing in
+    crafting cutting-edge websites that seamlessly blend creativity,
+    performance, accessibility, and usability.
 ---

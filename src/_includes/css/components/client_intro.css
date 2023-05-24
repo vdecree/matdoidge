@@ -1,6 +1,6 @@
 .client-intro{
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: var(--color-white);
+    color: var(--color-dark);
 }
 
 /* .client-intro h4{
@@ -11,6 +11,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.client-intro__meta ul li p:first-child{
+    margin-bottom: var(--size-100);
 }
 
 .client-intro__meta .eyebrow{
@@ -25,4 +29,8 @@
 
 .client-intro__meta .has-link p{
     gap: var(--size-100);
+}
+
+.client-intro__overview p{
+    font-size: var(--text-300);
 }

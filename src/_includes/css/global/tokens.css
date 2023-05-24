@@ -175,10 +175,6 @@
   align-content: center
 }
 
-.content-end {
-  align-content: flex-end
-}
-
 .items-center {
   align-items: center
 }
@@ -224,6 +220,11 @@
   border-radius: 0.5rem
 }
 
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 7 7 / var(--tw-bg-opacity))
+}
+
 .bg-light {
   --tw-bg-opacity: 1;
   background-color: rgb(217 217 217 / var(--tw-bg-opacity))
@@ -248,11 +249,6 @@
   padding-bottom: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)
 }
 
-.py-700 {
-  padding-top: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem);
-  padding-bottom: clamp(2.63rem, calc(1.89rem + 3.66vw), 4.50rem)
-}
-
 .text-center {
   text-align: center
 }
@@ -261,12 +257,16 @@
   font-size: clamp(2.57rem, calc(1.53rem + 5.18vw), 6.71rem)
 }
 
-.text-300 {
-  font-size: clamp(1.13rem, calc(1.05rem + 0.35vw), 1.41rem)
+.text-400 {
+  font-size: clamp(1.27rem, calc(1.14rem + 0.62vw), 1.76rem)
 }
 
 .text-800 {
   font-size: clamp(2.03rem, calc(1.46rem + 2.83vw), 4.29rem)
+}
+
+.font-bold {
+  font-weight: 700
 }
 
 .text-primary {
@@ -306,6 +306,10 @@
   --flow-space: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
 }
 
+.flow-space-400 {
+  --flow-space: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)
+}
+
 .flow-space-800 {
   --flow-space: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
@@ -315,16 +319,8 @@
     grid-column: span 2 / span 2
   }
 
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4
-  }
-
   .md\:col-span-6 {
     grid-column: span 6 / span 6
-  }
-
-  .md\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr))
   }
 
   .md\:grid-cols-4 {
@@ -349,6 +345,10 @@
     grid-column: span 2 / span 2
   }
 
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4
+  }
+
   .lg\:col-span-5 {
     grid-column: span 5 / span 5
   }
@@ -359,10 +359,6 @@
 
   .lg\:col-span-7 {
     grid-column: span 7 / span 7
-  }
-
-  .lg\:col-span-4 {
-    grid-column: span 4 / span 4
   }
 
   .lg\:col-start-2 {

@@ -12,7 +12,7 @@
             {% if loop.index0 < block.count %}
             <div class="work-list__item [ relative rounded-lg lg:col-span-6 ]">
                 <div class="image [ relative aspect-[16/11] ]">
-                    <img src="{{ work.data.thumbnail }}" alt="">
+                    <img src="{{ work.data.thumbnail }}?nf_resize=fit&w=920" alt="">
                 </div>   
                 <a href="{{ work.url }}">
                     <span aria-hidden="true" class="absolute inset-0 z-40"></span>

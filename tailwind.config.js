@@ -33,6 +33,7 @@ module.exports = {
       dark: '#070707',
       darkgreen: '#003837',
       white: '#ffffff',
+      notice: '#d65f3d',
     },
     fontSize: {
       ///* https://utopia.fyi/type/calculator?c=320,16,1.125,1600,18,1.25,10,0,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */ 

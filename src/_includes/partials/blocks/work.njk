@@ -10,8 +10,15 @@
         <div class="work-list [ grid lg:gap-600 lg:grid-cols-12 ]">
             {% for work in collections.work | reverse %}
             {% if loop.index0 < block.count %}
-            <div class="work-list__item [ aspect-[16/11] relative rounded-lg lg:col-span-6 ]">
-                <div class="text [ flow flow-space-100 transition-all ease-in-out duration-200 ]">
+            <div class="work-list__item [ relative rounded-lg lg:col-span-6 ]">
+                <div class="image [ relative aspect-[16/11] ]">
+                    <img src="{{ work.data.thumbnail }}" alt="">
+                </div>   
+                <a href="{{ work.url }}">
+                    <span aria-hidden="true" class="absolute inset-0 z-40"></span>
+                </a>
+                
+                <div class="text [ flow flow-space-100 ]">
                     {% if work.data.services %}
                     <p>
                         {% for service in work.data.services %}
@@ -21,10 +28,6 @@
                     {% endif %}
                     <h4>{{ work.data.title }}</h4>
                 </div>
-                <a href="{{ work.url }}">
-                    <span aria-hidden="true" class="absolute inset-0 z-40"></span>
-                </a>
-                <img src="{{ work.data.thumbnail }}" alt="">
             </div>
             {% endif %}
             {% endfor%}

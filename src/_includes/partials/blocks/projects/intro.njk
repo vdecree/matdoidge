@@ -3,7 +3,7 @@
         <div class="grid [ lg:gap-900 md:grid-cols-8 ]">
             <div class="client-intro__overview [ md:col-span-6 flow ]">
                 {{ block.content | markdown | safe }}
-                {% if block.button %}<a class="button" data-type="dark" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
+                {% if block.button.text %}<a class="button" data-type="dark" href="{{ block.button.link }}">{{ block.button.text }}</a>{% endif %}
             </div>
 
             <div class="client-intro__meta [ md:col-span-2 ]">
@@ -26,6 +26,7 @@
                         <p class="font-bold">Year</p>
                         <p>{{ block.year }}</p>
                     </li>
+                    {% if development %}<li><span class="notice p-100">In Development</span></li>{% endif %}
                 </ul>
             </div>
         </div>

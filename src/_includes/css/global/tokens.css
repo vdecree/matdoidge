@@ -12,6 +12,7 @@
   --color-dark: #070707;
   --color-darkgreen: #003837;
   --color-white: #ffffff;
+  --color-notice: #d65f3d;
   --size-0: 0;
   --size-100: clamp(0.19rem, calc(0.11rem + 0.37vw), 0.38rem);
   --size-200: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem);
@@ -244,6 +245,10 @@
   padding: 0
 }
 
+.p-100 {
+  padding: clamp(0.19rem, calc(0.11rem + 0.37vw), 0.38rem)
+}
+
 .py-600 {
   padding-top: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem);
   padding-bottom: clamp(2.00rem, calc(1.61rem + 1.95vw), 3.00rem)
@@ -278,20 +283,6 @@
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
-}
-
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms
-}
-
-.duration-200 {
-  transition-duration: 200ms
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .flow-space-100 {

@@ -28,9 +28,16 @@
 }
 
 .client-intro__meta .has-link p{
-    gap: var(--size-100);
+    gap: var(--text-100);
 }
 
 .client-intro__overview p{
     font-size: var(--text-300);
+}
+
+.notice{
+    color: var(--color-notice);
+    border: 1px solid var(--color-notice);
+    text-align: center;
+    border-radius: var(--rounded-lg);
 }

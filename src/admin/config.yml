@@ -210,6 +210,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "Tagline", name: "tagline", widget: "string" }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'In Development?', name: 'development', widget: 'boolean', required: false }
       - label: "Services"
         name: "services"
         widget: "select"

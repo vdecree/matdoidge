@@ -2,6 +2,8 @@
 title: Immediate Theatre
 tagline: some tagline
 thumbnail: /uploads/it-thumbnail.jpg
+heroimage: /uploads/188a7902breakout-performance-w1920h1000.jpg
+heroalt: Immediate theatre hero
 services:
   - Design
 projects:
@@ -11,18 +13,22 @@ projects:
     image: /uploads/188a7902breakout-performance-w1920h1000.jpg
     alt: dfgdfgfdgfdgfdgfdgfd
   - type: intro
-    content: |-2
+    content: >-2
        #### The Client
 
-      TBD
+      Immediate Theatre's purpose is to involve communities in creative projects that inspire wellbeing, break down barriers and engage people in the process of personal and social change. They use theatre and the arts to help people engage with issues and concerns.
+
 
       #### The Challenge
 
-      TBD
+
+      Their outdated website was not effectively serving their needs. With a wide range of content types and a lack of cohesion, the previous website created a confusing and cluttered user experience. Our mission was clear: to bring order to the chaos and provide a streamlined solution that caters to their diverse content needs. 
+
 
       #### The Solution
 
-      TBD
+
+      By implementing a clear hierarchy and carefully organizing sections, we ensured the team could easily add and manage content. Our goal was to create a seamless and user-friendly path through the website, offering an improved experience for both the team and their visitors. The site leverages the power of 11ty and Netlify CMS - expertly built by Ryan from Gittings Studio.
     client: Gittings Studio
     clientlink: "#"
     year: "2023"

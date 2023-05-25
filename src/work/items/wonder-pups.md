@@ -2,6 +2,8 @@
 title: Wonder Pups
 tagline: Bespoke Puppy Training - Helping you train your puppy like a pro.
 thumbnail: /uploads/wp-thumbnail.jpg
+heroimage: /uploads/hero-bg.jpg
+heroalt: Wonder pups hero
 services:
   - Design
 projects:

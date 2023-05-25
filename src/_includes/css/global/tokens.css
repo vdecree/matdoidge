@@ -217,6 +217,10 @@
        column-gap: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
 }
 
+.overflow-hidden {
+  overflow: hidden
+}
+
 .rounded-lg {
   border-radius: 0.5rem
 }

@@ -3,6 +3,8 @@ title: Rosie Walker
 tagline: some tagline here
 thumbnail: /uploads/rw-thumbnail.jpg
 development: true
+heroimage: /uploads/jason-briscoe-ktrov7eujms-unsplash.jpg
+heroalt: Rosie walker hero
 services:
   - Design
   - Development
@@ -43,10 +45,4 @@ projects:
     content: "### The redesign focuses on delivering a streamlined user experience,
       ensuring that key information is easy to find and presented in a clear and
       concise manner."
-  - type: imagedouble
-    imageone: /uploads/double-image-1.jpg
-    imagetwo: /uploads/double-image-2.jpg
-    altone: dsfsd
-    alttwo: "sdf dsf sdf sdf "
-    background: ff985a
 ---

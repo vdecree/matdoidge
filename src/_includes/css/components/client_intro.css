@@ -24,7 +24,7 @@
 .client-intro__meta svg{
     width: 1.8rem;
     height: auto;
-    fill: var(--color-light);
+    fill: var(--color-dark);
 }
 
 .client-intro__meta .has-link p{

@@ -211,6 +211,8 @@ collections:
       - { label: "Tagline", name: "tagline", widget: "string" }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
       - { label: 'In Development?', name: 'development', widget: 'boolean', required: false }
+      - { label: 'Hero Image', name: 'heroimage', widget: 'image' }
+      - { label: 'Hero Image Alt', name: 'heroalt', widget: 'string' }
       - label: "Services"
         name: "services"
         widget: "select"
@@ -226,8 +228,6 @@ collections:
             widget: object
             fields:
               - { label: 'Tagline', name: 'tagline', widget: 'string' }
-              - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'Image Alt', name: 'alt', widget: 'string' }
           - label: 'Intro'
             name: 'intro'
             widget: object

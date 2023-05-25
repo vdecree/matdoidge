@@ -8,10 +8,10 @@
 
     <div class="wrapper">
         <div class="work-list [ grid lg:gap-600 lg:grid-cols-12 ]">
-            {% for work in collections.work | reverse %}
+            {% for work in collections.work %}
             {% if loop.index0 < block.count %}
-            <div class="work-list__item [ relative rounded-lg lg:col-span-6 ]">
-                <div class="image [ relative aspect-[16/11] ]">
+            <div class="work-list__item [ relative lg:col-span-6 ]">
+                <div class="image [ relative aspect-[16/11] rounded-lg overflow-hidden ]">
                     <img src="{{ work.data.thumbnail }}?nf_resize=fit&w=920" alt="">
                 </div>   
                 <a href="{{ work.url }}">

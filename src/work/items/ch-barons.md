@@ -1,5 +1,6 @@
 ---
 title: CH Barons
+date: 2023-05-26T09:55:52.992Z
 tagline: C H Barons Ltd is an established carpentry based construction company
   based in the South Hams
 thumbnail: /uploads/cb-thumbnail.jpg

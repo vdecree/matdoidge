@@ -8,7 +8,7 @@
 
     <div class="wrapper">
         <div class="work-list [ grid lg:gap-600 lg:grid-cols-12 ]">
-            {% for work in collections.work %}
+            {%- for work in collections.work | reverse -%}
             {% if loop.index0 < block.count %}
             <div class="work-list__item [ relative lg:col-span-6 ]">
                 <div class="image [ relative aspect-[16/11] rounded-lg overflow-hidden ]">

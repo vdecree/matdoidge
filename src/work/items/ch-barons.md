@@ -12,8 +12,8 @@ services:
   - Branding
 projects:
   - type: hero
-    tagline: C H Barons Ltd is an established carpentry based construction company
-      based in the South Hams
+    tagline: C H Barons is a well-established construction company specializing in
+      carpentry.
   - type: intro
     content: >-2
        #### The Client

@@ -8,7 +8,7 @@ blocks:
     content: "I help brands and businesses propel themselves in the connected world. "
     buttons:
       - text: View My Work
-        link: "#"
+        link: /work
     image: /uploads/hero-new.jpg
   - type: intro
     eyebrow: uncover hidden opportunities

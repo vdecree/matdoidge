@@ -22,13 +22,13 @@ projects:
       #### The Challenge
 
 
-      Working alongside Ryan from Gittings Studio, we set out with a clear vision for Wonder Pups. We needed it be stand out from the competition and get across Hannahs personality and passion. We knew this couldn't be just any ordinary dog training website.
+      Collaborating with Ryan from Gittings Studio, our goal for Wonder Pups was crystal clear. We aimed to create a website that would truly stand out from the competition and effectively convey Hannah's personality and passion. We understood that this couldn't be just another ordinary dog training website. Our objective was to design an extraordinary online presence that captures the essence of Wonder Pups and sets them apart
 
 
       #### The Solution
 
 
-      We opted for a bold colour palette which helps give the site a playful and fun feel. By splitting the pages into blocks and focussing on delivery of the most important information we give potential clients a clear and easy path through the site.
+      We chose a vibrant color palette that adds a playful and lively touch to the website. By organizing the pages into distinct blocks and prioritizing the delivery of essential information, we ensure potential clients have a clear and effortless navigation experience. Our focus is to provide a seamless journey for visitors, allowing them to easily access the most important details about Wonder Pups' services.
     client: Gittings Studio
     clientlink: "#"
     year: "2023"

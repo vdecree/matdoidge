@@ -17,18 +17,22 @@ projects:
     image: /uploads/mcg-hero.jpg
     alt: MCG Electrical hero
   - type: intro
-    content: |-2
+    content: >-2
        #### The Client
 
-      tbd
+      MCG Electrical Contractors are a fully accredited, experienced electrical contractors and maintenance organisation based in Gloucestershire and now working at a local and national level across a variety of sectors, including commercial, residential, care, hospitality and manufacturing.
+
 
       #### The Challenge
 
-      tbd
+
+      MCG Electrical had an outdated and basic website that provided little benefit to the company. It was crucial to showcase the high-end nature of their work through the design and effectively convey the breadth of their abilities within the electrical contracting sector.
+
 
       #### The Solution
 
-      tbd
+
+      To elevate MCG Electrical above the competition, I implemented a high-end finish to the website. I utilized a strong yet neutral color scheme and structured the content in an easy-to-digest manner, allowing users to navigate through the company's extensive offerings quickly and effortlessly. Additionally, I completely redesigned the brandmark to convey a strong and technical appearance while ensuring responsiveness across various sizes and mediums.
     client: MCG Electrical
     year: "2023"
   - type: imagefull

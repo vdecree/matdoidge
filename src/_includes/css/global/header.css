@@ -111,7 +111,7 @@
 .hero[data-type="project"] .hero-content{
     min-height: 100%;
     z-index: 100;
-    padding-bottom: calc(2rem + var(--size-900));
+    padding-bottom: calc(10ch + var(--size-600));
 }
 
 .hero[data-type="index"] p{

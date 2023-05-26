@@ -15,18 +15,22 @@ projects:
     tagline: C H Barons Ltd is an established carpentry based construction company
       based in the South Hams
   - type: intro
-    content: |-2
+    content: >-2
        #### The Client
 
-      TBD
+      C H Barons Ltd is an established carpentry-based construction company located in the picturesque South Hams region. With over 19 years of experience, they have built a solid reputation for delivering top-notch craftsmanship, where their unwavering attention to detail takes precedence.
+
 
       #### The Challenge
 
-      TBD
+
+      With no existing online presence or branding, it was crucial to portray C H Barons as a firmly established and experienced carpentry company. The website needed to be fast, efficient, and, above all, easy to update and maintain for the team. Additionally, I aimed to ensure that the branding seamlessly translated across all mediums, effectively representing the exceptional quality finish that C H Barons provides.
+
 
       #### The Solution
 
-      TBD
+
+      In collaboration with C H Barons, I created a monogram-style brand mark that is responsive and adaptable across various sizes and mediums, including branded clothing. The website was developed using the Kirby CMS, providing the team with a remarkably fast, efficient, and user-friendly platform for future website maintenance. Most importantly, it successfully conveys the company's commitment to delivering quality craftsmanship.
     client: CH Barons
     year: "2023"
   - type: imagefull

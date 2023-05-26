@@ -208,6 +208,7 @@ collections:
     extension: 'md'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tagline", name: "tagline", widget: "string" }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
       - { label: 'In Development?', name: 'development', widget: 'boolean', required: false }

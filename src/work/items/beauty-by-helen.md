@@ -1,5 +1,6 @@
 ---
 title: Beauty by Helen
+date: 2020-11-06T17:09:00.000Z
 tagline: tag
 thumbnail: /uploads/bbh-thumbnail.jpg
 heroimage: /uploads/bbh-hero.jpg

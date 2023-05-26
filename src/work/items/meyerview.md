@@ -1,5 +1,6 @@
 ---
 title: Meyerview
+date: 2020-06-17T15:25:14.838Z
 tagline: tagline
 thumbnail: /uploads/mv-thumbnail.jpg
 heroimage: /uploads/mv-hero.jpg

@@ -1,8 +1,9 @@
 ---
 title: Immediate Theatre
+date: 2023-05-26T15:20:36.206Z
 tagline: some tagline
 thumbnail: /uploads/it-thumbnail.jpg
-heroimage: /uploads/188a7902breakout-performance-w1920h1000.jpg
+heroimage: /uploads/it-bg.jpg
 heroalt: Immediate theatre hero
 services:
   - Design

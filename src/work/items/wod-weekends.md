@@ -1,5 +1,6 @@
 ---
 title: WOD Weekends
+date: 2020-02-12T16:17:34.486Z
 tagline: tagline
 thumbnail: /uploads/wod-thumbnail.jpg
 development: false

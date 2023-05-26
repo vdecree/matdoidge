@@ -1,9 +1,10 @@
 ---
 title: Rosie Walker
+date: 2023-05-26T15:27:43.159Z
 tagline: some tagline here
 thumbnail: /uploads/rw-thumbnail.jpg
 development: true
-heroimage: /uploads/jason-briscoe-ktrov7eujms-unsplash.jpg
+heroimage: /uploads/rw-hero.jpg
 heroalt: Rosie walker hero
 services:
   - Design

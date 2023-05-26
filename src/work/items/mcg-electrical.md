@@ -1,5 +1,6 @@
 ---
 title: MCG Electrical
+date: 2023-05-26T15:23:28.478Z
 tagline: tagline
 thumbnail: /uploads/mcg-thumbnail.jpg
 development: true

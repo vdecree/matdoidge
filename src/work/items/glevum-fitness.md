@@ -1,5 +1,6 @@
 ---
 title: Glevum Fitness
+date: 2018-10-17T15:18:55.253Z
 tagline: tag
 thumbnail: /uploads/g-thumbnail.jpg
 heroimage: /uploads/g-hero.jpg

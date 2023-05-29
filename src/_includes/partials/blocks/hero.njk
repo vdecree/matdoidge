@@ -1,7 +1,7 @@
 <section class="hero" data-type="index">
   <img src="{{ block.image | default('/uploads/hero-home.jpg') }}" class="hero__background" alt="">
   
-  <div class="[ wrapper ] [ max-w-7xl ]">
+  <div class="[ wrapper ] [ max-w-7xl h-full content-center ]">
     <div class="flow">
       <span class="hero__eyebrow [ eyebrow ]">{{ block.eyebrow }}</span>
       <h1 class="hero__title [ text-1000 ]">{{ block.title }}</h1>
@@ -17,6 +17,6 @@
       </div>
     </div>
 
-    <div class="icon">{% include '../../../img/hero-icon.svg' %}</div>
+    <div class="icon [ hidden lg:block ]">{% include '../../../img/hero-icon.svg' %}</div>
   </div>
 </section>

@@ -121,8 +121,16 @@
   display: grid
 }
 
+.hidden {
+  display: none
+}
+
 .aspect-\[16\/11\] {
   aspect-ratio: 16/11
+}
+
+.h-full {
+  height: 100%
 }
 
 .h-screen {
@@ -359,6 +367,10 @@
 
   .lg\:col-start-4 {
     grid-column-start: 4
+  }
+
+  .lg\:block {
+    display: block
   }
 
   .lg\:flex {

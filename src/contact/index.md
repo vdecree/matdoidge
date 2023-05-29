@@ -1,5 +1,5 @@
 ---
-layout: layouts/nohero.njk
+layout: layouts/contact.njk
 title: Contact
 blocks:
   - type: contact

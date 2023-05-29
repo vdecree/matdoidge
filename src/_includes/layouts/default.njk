@@ -15,7 +15,7 @@
     {# header #}
     {# I am using some front matter to change the theme of the header so easily make changes via CSS #}
     <div class="main-content">
-    <header class="site-header" data-color="{{ headerClasses|default("light", true) }}" aria-expanded="false">
+    <header class="site-header {{ headerColouring|default("white", true) }}" data-color="{{ headerClasses|default("light", true) }}" aria-expanded="false">
       <div class="wrapper">
         <div class="site-header__cont [ stack ]">
         <button class="menu-toggle" data-menu-toggle="false" aria-label="Toggle Menu">
@@ -40,7 +40,7 @@
           </div>
 
           <div class="action [ flex justify-end ]">
-            <a href="/contact" class="button">
+            <a href="/contact" class="button" data-type="{{ headerButtType|default("hollow", true) }}">
               Embark Now
             </a>
           </div>

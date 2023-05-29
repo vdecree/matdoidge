@@ -42,7 +42,8 @@ projects:
     background: 7dd1e0
   - type: text
     eyebrow: f
-    content: "### TBD"
+    content: "### To capture the essence of Immediate Theatre's creative work, I
+      infused the design with playful hand-drawn marks."
   - type: imagedouble
     imageone: /uploads/it-side-1.jpg
     altone: Immediate theatre design image 1

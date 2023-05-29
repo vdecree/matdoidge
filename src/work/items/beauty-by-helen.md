@@ -9,9 +9,24 @@ services:
   - Branding
 projects:
   - type: hero
-    tagline: tagline here
+    tagline: Your ultimate destination for top-quality beauty treatments in Avonwick.
   - type: intro
-    content: tbd
+    content: >-2
+       #### The Client
+
+      Beauty by Helen is your ultimate destination for top-quality beauty treatments in Avonwick. Helen, a skilled and passionate beauty therapist, brings a wealth of expertise and a commitment to delivering exceptional service. With a comprehensive range of beauty treatments available, rest assured that you will experience personalized care and outstanding results. 
+
+
+      #### The Challenge
+
+
+      Beauty by Helen faced the challenge of establishing a brand identity that accurately conveyed the exceptional quality of the treatments offered while also fostering a deeper connection with her valued clientele.
+
+
+      #### The Solution
+
+
+      I crafted a brand identity that exudes high-quality sophistication with a touch of femininity. The chosen color palette and brand icon evoke a sense of calm, providing a harmonious visual experience for clients.
     client: Beauty by Helen
     year: "2020"
   - type: imagefull

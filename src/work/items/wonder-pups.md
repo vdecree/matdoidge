@@ -37,9 +37,8 @@ projects:
     alt: Wonder Pups Homepage
     background: edd380
   - type: text
-    content: "### We brought our furry friends into the forefront of the design
-      throughout the website, because who doesn't love pictures of our furry
-      little friends!?"
+    content: "### We placed our adorable furry friends at the heart of the website
+      design, because who can resist the charm of these lovable companions? "
     eyebrow: d
   - type: imagedouble
     imageone: /uploads/wp-double-1.jpg

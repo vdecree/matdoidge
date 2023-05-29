@@ -55,7 +55,8 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px',
       'xxl': '1378px',
-      '2xl': '1536px'
+      '2xl': '1536px',
+      '900h': { 'raw': '((min-width: 1920px) and (min-height: 1000px))' },
     },
     spacing: {
       // https://utopia.fyi/space/calculator/?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l

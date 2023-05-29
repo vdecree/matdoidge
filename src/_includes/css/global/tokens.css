@@ -369,10 +369,6 @@
     grid-column-start: 4
   }
 
-  .lg\:block {
-    display: block
-  }
-
   .lg\:flex {
     display: flex
   }
@@ -421,5 +417,11 @@
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0
+  }
+}
+
+@media ((min-width: 1920px) and (min-height: 1000px)) {
+  .\39 00h\:block {
+    display: block
   }
 }

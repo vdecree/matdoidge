@@ -22,8 +22,10 @@
   "homepage": "https://github.com/bly-th/eleventy",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.1.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "@11ty/eleventy-plugin-webc": "^0.11.1",
     "@bly-th/css": "^0.1.5",
     "@bly-th/tailwind-css-variables": "^1.0.0",
     "@bly-th/tailwind-custom-utilities": "^1.0.0",

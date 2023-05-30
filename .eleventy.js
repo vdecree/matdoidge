@@ -6,6 +6,9 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const cssMinFilter = require('./src/filters/css-min.js');
 const markdownFilter = require('./src/filters/markdown.js');
 
+// Import shortcodes
+const imageShortcode = require('./src/shortcodes/image.js');
+
 module.exports = (eleventyConfig) => {
   // Add plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -14,6 +17,9 @@ module.exports = (eleventyConfig) => {
   // Add filters
   eleventyConfig.addFilter('cssmin', cssMinFilter);
   eleventyConfig.addFilter('markdown', markdownFilter);
+
+  // Add shortcodes
+  eleventyConfig.addShortcode('image', imageShortcode);
 
   // Pass through
   eleventyConfig.addPassthroughCopy('./src/admin/config.yml');
@@ -30,7 +36,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('./src/safari-pinned-tab.svg');
   eleventyConfig.addPassthroughCopy('./src/site.webmanifest');
   eleventyConfig.addPassthroughCopy('./src/robots.txt');
-
 
   return {
     dir: {

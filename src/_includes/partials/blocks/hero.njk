@@ -1,12 +1,12 @@
 <section class="hero" data-type="index">
-  {# <img src="{{ block.image | default('/uploads/hero-home.jpg') }}" class="hero__background" alt=""> #}
+  <img src="{{ block.image | default('/uploads/hero-home.jpg') }}" class="hero__background" alt="">
   {# {% set src = block.image | default('/uploads/hero-new.jpg') %} #}
-  {% image block.image, {
+  {# {% image block.image, {
     classes: 'hero__background',
     alt: block.imagealt,
-    widths: [1000, 1400, 2000],
+    widths: [1000, 1400, 2000, "auto"],
     loading: 'lazy'
-  } %}
+  } %} #}
   
   <div class="[ wrapper ] [ max-w-7xl h-full content-center ]">
     <div class="flow">

@@ -111,6 +111,7 @@
 .hero[data-type="index"] p{
     font-size: var(--text-400);
     color: var(--color-primary);
+    background-color: var(--color-dark);
 }
 
 .hero[data-type="index"]{

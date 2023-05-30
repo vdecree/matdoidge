@@ -40,7 +40,9 @@ projects:
     alt: mcg home design
     background: 49575b
   - type: text
-    content: "### tbd"
+    content: "### Empowering the client with customizable and rearrangeable content
+      blocks, the website's robust yet user-friendly CMS, powered by Netlify
+      CMS, puts the client in the driver's seat of their online presence."
     eyebrow: d
   - type: imagedouble
     imageone: /uploads/mcg-side-1.jpg

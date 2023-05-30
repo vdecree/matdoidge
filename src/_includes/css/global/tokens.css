@@ -129,6 +129,10 @@
   aspect-ratio: 16/11
 }
 
+.h-auto {
+  height: auto
+}
+
 .h-full {
   height: 100%
 }

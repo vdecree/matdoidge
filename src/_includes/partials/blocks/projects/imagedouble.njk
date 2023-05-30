@@ -2,11 +2,23 @@
     <div class="wrapper">
         <div class="grid [ lg:grid-cols-12 lg:gap-600 ]">
             <div class="[ lg:col-span-6 shadow-xl ]">
-                <img class="rounded-lg" src="{{ block.imageone }}" alt="{{ block.altone }}">
+                {# <img class="rounded-lg" src="{{ block.imageone }}" alt="{{ block.altone }}"> #}
+                {% image block.imageone, {
+                    classes: 'rounded-lg h-auto',
+                    alt: block.altone,
+                    widths: [1000, 1380],
+                    loading: 'lazy'
+                } %}
             </div>
 
             <div class="[ lg:col-span-6 shadow-xl ]">
-                <img class="rounded-lg" src="{{ block.imagetwo }}" alt="{{ block.alttwo }}">
+                {# <img class="rounded-lg" src="{{ block.imagetwo }}" alt="{{ block.alttwo }}"> #}
+                {% image block.imagetwo, {
+                    classes: 'rounded-lg h-auto',
+                    alt: block.alttwo,
+                    widths: [1000, 1380],
+                    loading: 'lazy'
+                } %}
             </div>
         </div>
     </div>

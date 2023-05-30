@@ -6,6 +6,12 @@
                 <h1 class="text-800">{{ block.tagline }}</h1>
             </div>
         </div>
-        <img class="hero__background" src="{{ heroimage }}" alt="{{ heroalt }}">
+        {# <img class="hero__background" src="{{ heroimage }}" alt="{{ heroalt }}"> #}
     </div>
+    {% image heroimage, {
+        classes: 'hero__background',
+        alt: heroalt,
+        widths: [1000, 1380, 2000],
+        loading: 'lazy'
+    } %}
 </section>

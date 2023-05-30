@@ -12,7 +12,13 @@
             {% if loop.index0 < block.count %}
             <div class="work-list__item [ relative lg:col-span-6 ]">
                 <div class="image [ relative aspect-[16/11] rounded-lg overflow-hidden ]">
-                    <img src="{{ work.data.thumbnail }}" alt="">
+                    {# <img src="{{ work.data.thumbnail }}" alt=""> #}
+                    {% image work.data.thumbnail, {
+                        classes: 'hero__background',
+                        alt: work.data.title + " thumbnail",
+                        widths: [600, 900],
+                        loading: 'lazy'
+                    } %}
                 </div>   
                 <a href="{{ work.url }}">
                     <span aria-hidden="true" class="absolute inset-0 z-40"></span>

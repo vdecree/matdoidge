@@ -5,11 +5,12 @@ blocks:
   - type: hero
     title: Pioneering Perspective
     eyebrow: Freelance Web Designer
-    content: "I help brands and businesses propel themselves in the connected world. "
+    content: I help brands and businesses propel themselves in the connected world.
     buttons:
       - text: View My Work
         link: /work
     image: /uploads/hero-new.jpg
+    imagealt: Homepage hero image
   - type: intro
     eyebrow: uncover hidden opportunities
     title: For over 10 years I have embolden the cautious & championed the brave.

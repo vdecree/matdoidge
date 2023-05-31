@@ -31,7 +31,7 @@ projects:
 
       From its inception, the design was meticulously crafted to prioritize user hierarchy and streamline the user journey, enabling visitors to easily access information about upcoming event dates. The website is seamlessly managed through Perch CMS, ensuring efficient content management and updates.
     client: WOD Weekends
-    year: "2021"
+    year: "2020"
   - type: imagefull
     image: /uploads/wod-full-image.jpg
     alt: WOD Weekends homepage

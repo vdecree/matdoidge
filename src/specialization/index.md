@@ -52,6 +52,8 @@ blocks:
           memorable brand identity that resonates with your target audience. We
           work with you to define your brand's personality, voice, and
           positioning.
+meta:
+  title: Specialization | Mat Doidge - Freelance Web Designer
 eleventyNavigation:
   key: Specialization
 ---

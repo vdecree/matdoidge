@@ -25,6 +25,8 @@ blocks:
         text: Elevating your brand's identity and messaging to stand out in a crowded
           digital landscape.
         icon: /uploads/branding-icon.svg
+meta:
+  title: My Work | Mat Doidge - Freelance Web Designer
 eleventyNavigation:
   key: Work
 ---

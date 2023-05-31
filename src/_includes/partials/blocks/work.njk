@@ -11,7 +11,7 @@
             {%- for work in collections.work | reverse -%}
             {% if loop.index0 < block.count %}
             <div class="work-list__item [ relative lg:col-span-6 ]">
-                <div class="image [ relative aspect-[16/11] rounded-lg overflow-hidden ]">
+                <div class="image [ relative aspect-[16/11] rounded-lg overflow-hidden shadow-xl ]">
                     {# <img src="{{ work.data.thumbnail }}" alt=""> #}
                     {% image work.data.thumbnail, {
                         classes: 'hero__background',

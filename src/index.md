@@ -19,7 +19,7 @@ blocks:
       result of hard work and relentless dedication. Embark on this journey with
       me, and let's create something truly extraordinary together.
     button:
-      text: About Me
+      text: ""
       link: "#"
     image: /uploads/intro-gfx.svg
     alt: Image alt text

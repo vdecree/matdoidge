@@ -1,7 +1,7 @@
 ---
 title: MCG Electrical
 date: 2021-07-21T15:23:28.478Z
-tagline: tagline
+tagline: ctagline
 thumbnail: /uploads/mcg-thumbnail.jpg
 development: true
 heroimage: /uploads/mcg-hero.jpg

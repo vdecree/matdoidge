@@ -54,6 +54,8 @@ blocks:
           positioning.
 meta:
   title: Specialisation | Mat Doidge - Freelance Web Designer
+  desc: I have the expertise to bring your ideas to life, whether it's designing
+    websites, branding or web development
 social:
   image: /uploads/og-image.jpg
 eleventyNavigation:

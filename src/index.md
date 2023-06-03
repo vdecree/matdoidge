@@ -60,7 +60,7 @@ blocks:
     showbutton: true
 meta:
   title: Freelance Web Designer in Gloucester & UK | Mat Doidge
-  desc: I'm Mat, a seasoned freelance web designer and developer specializing in
+  desc: I'm Mat, a seasoned freelance web designer and developer specialising in
     crafting cutting-edge websites that seamlessly blend creativity,
     performance, accessibility, and usability.
 social:

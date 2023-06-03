@@ -97,8 +97,16 @@
   margin-right: auto
 }
 
+.mb-200 {
+  margin-bottom: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
 .mb-800 {
   margin-bottom: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
+}
+
+.mr-300 {
+  margin-right: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
 }
 
 .mt-700 {
@@ -109,28 +117,8 @@
   margin-top: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
-.mr-200 {
-  margin-right: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
-}
-
-.mr-300 {
-  margin-right: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
-}
-
-.mb-300 {
-  margin-bottom: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
-}
-
-.mb-200 {
-  margin-bottom: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
-}
-
 .block {
   display: block
-}
-
-.inline-block {
-  display: inline-block
 }
 
 .flex {
@@ -205,10 +193,6 @@
   flex-direction: column
 }
 
-.flex-wrap {
-  flex-wrap: wrap
-}
-
 .content-center {
   align-content: center
 }
@@ -231,10 +215,6 @@
 
 .justify-items-center {
   justify-items: center
-}
-
-.gap-400 {
-  gap: clamp(1.00rem, calc(0.80rem + 0.98vw), 1.50rem)
 }
 
 .gap-500 {
@@ -315,6 +295,10 @@
   font-weight: 700
 }
 
+.font-medium {
+  font-weight: 500
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(181 110 70 / var(--tw-text-opacity))
@@ -361,10 +345,6 @@
 
   .md\:inline-flex {
     display: inline-flex
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 
   .md\:grid-cols-8 {
@@ -427,14 +407,6 @@
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr))
-  }
-
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr))
   }
 
   .lg\:flex-row {

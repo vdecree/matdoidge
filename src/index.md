@@ -63,4 +63,6 @@ meta:
   desc: I'm Mat, a seasoned freelance web designer and developer specializing in
     crafting cutting-edge websites that seamlessly blend creativity,
     performance, accessibility, and usability.
+social:
+  image: /uploads/og-image.jpg
 ---

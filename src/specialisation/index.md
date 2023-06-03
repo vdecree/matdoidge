@@ -54,6 +54,8 @@ blocks:
           positioning.
 meta:
   title: Specialisation | Mat Doidge - Freelance Web Designer
+social:
+  image: /uploads/og-image.jpg
 eleventyNavigation:
   key: Specialisation
 ---

@@ -6,4 +6,6 @@ blocks:
     title: Embark on your journey today.
 meta:
   title: Contact | Mat Doidge - Freelance Web Designer
+social:
+  image: /uploads/og-image.jpg
 ---

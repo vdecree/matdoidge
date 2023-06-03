@@ -27,6 +27,8 @@ blocks:
         icon: /uploads/branding-icon.svg
 meta:
   title: My Work | Mat Doidge - Freelance Web Designer
+social:
+  image: /uploads/og-image.jpg
 eleventyNavigation:
   key: Work
 ---

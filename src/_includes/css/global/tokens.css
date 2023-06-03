@@ -117,6 +117,14 @@
   margin-top: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
+.mr-200 {
+  margin-right: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
+.mr-100 {
+  margin-right: clamp(0.19rem, calc(0.11rem + 0.37vw), 0.38rem)
+}
+
 .block {
   display: block
 }
@@ -245,11 +253,6 @@
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(7 7 7 / var(--tw-bg-opacity))
-}
-
-.bg-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity))
 }
 
 .bg-secondary {

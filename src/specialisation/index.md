@@ -15,7 +15,6 @@ blocks:
       - toolname: Figma
       - toolname: Adobe Photoshop
       - toolname: Adobe Illustrator
-      - toolname: Github
       - toolname: 11ty
       - toolname: Netlify
     skills:

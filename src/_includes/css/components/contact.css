@@ -87,7 +87,7 @@ form .option input[type=radio]:checked+label {
     height: 1.4em;
     position: relative;
     /* top: -0.2em; */
-    margin-right: 1em;
+    margin-right: var(--size-200);
     vertical-align: top;
     cursor: pointer;
     text-align: center;

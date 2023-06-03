@@ -30,7 +30,7 @@ projects:
 
       We chose a vibrant color palette that adds a playful and lively touch to the website. By organizing the pages into distinct blocks and prioritizing the delivery of essential information, we ensure potential clients have a clear and effortless navigation experience. Our focus is to provide a seamless journey for visitors, allowing them to easily access the most important details about Wonder Pups' services.
     client: Gittings Studio
-    clientlink: "#"
+    clientlink: https://www.ryangittings.co.uk/
     year: "2023"
   - type: imagefull
     image: /uploads/wp-full-image.jpg

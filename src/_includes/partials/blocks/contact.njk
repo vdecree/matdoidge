@@ -7,26 +7,26 @@
 
     <div class="wrapper [ max-w-6xl ]">
         <div class="stack">
-            <form class="[ mt-800 bg-light rounded-lg flow shadow-xl ]" action="/contact/success" name="contact" method="POST" data-netlify="true">
-                <fieldset class="[ flow ]">
+            <form class="[ w-full mt-800 bg-light rounded-lg flow shadow-xl ]" action="/contact/success" name="contact" method="POST" data-netlify="true">
+                <fieldset class="[ w-full flow ]">
                     <legend class="head">Project Details</legend>
                     <div>
-                    <fieldset class="[ flow flow-space-200 ]">
+                    <fieldset class="[ w-full flow flow-space-200 ]">
                         <legend>What is your budget?</legend>
-                        <div class="grid gap-400 md:grid-cols-4 lg:grid-cols-5">
-                            <div class="option">
+                        <div class="w-full [ md:inline-flex md:flex-wrap ]">
+                            <div class="option [ mr-300 mb-200 md:mb-0 ]">
                                 <input id="500-1000" type="radio" name="budget" value="£500-£1000">
                                 <label for="500-1000">£500-£1000</label>
                             </div>
-                            <div class="option">
+                            <div class="option [ mr-300 mb-200 md:mb-0 ]">
                                 <input id="1000-2000" type="radio" name="budget" value="£1000-£2000">
                                 <label for="1000-2000">£1000-£2000</label>
                             </div>
-                            <div class="option">
+                            <div class="option [ mr-300 mb-200 md:mb-0 ]">
                                 <input id="2000-3000" type="radio" name="budget" value="£2000-£3000">
                                 <label for="2000-3000">£2000-£3000</label>
                             </div>
-                            <div class="option">
+                            <div class="option [ mr-300 mb-200 md:mb-0 ]">
                                 <input id="3000-4000" type="radio" name="budget" value="£3000-£4000">
                                 <label for="3000-4000">£3000-£4000</label>
                             </div>
@@ -40,16 +40,16 @@
                     <div>
                     <fieldset class="[ flow flow-space-200 ]">
                         <legend>What type of project?</legend>
-                        <div class="grid gap-400 md:grid-cols-4 lg:grid-cols-5">
-                            <div class="option">
+                        <div class="md:inline-flex md:flex-wrap">
+                            <div class="option [ inline-flex items-center mr-300 mb-200 md:mb-0 ]">
                                 <input id="design" type="checkbox" name="type" value="Website Design">
                                 <label for="design">Web Design</label>
                             </div>
-                            <div class="option">
+                            <div class="option [ inline-flex items-center mr-300 mb-200 md:mb-0 ]">
                                 <input id="development" type="checkbox" name="type" value="Website Development">
                                 <label for="development">Web Development</label>
                             </div>
-                            <div class="option">
+                            <div class="option [ inline-flex items-center mr-300 mb-200 md:mb-0 ]">
                                 <input id="branding" type="checkbox" name="type" value="Branding">
                                 <label for="branding">Branding</label>
                             </div>
@@ -59,14 +59,14 @@
                     <div>
                         <div class="field [ flow ]">
                             <label for="overview">Tell me a little about the project</label>
-                            <textarea name="overview" id="overview" cols="30" rows="6"></textarea>
+                            <textarea name="overview" id="overview" rows="6"></textarea>
                         </div>
                     </div>
 
                     <div>
                         <div class="field [ flow ]">
                             <label for="pages">If you're looking for a website, can you tell me what pages you require?</label>
-                            <textarea name="pages" id="pages" cols="30" rows="6"></textarea>
+                            <textarea name="pages" id="pages" rows="6"></textarea>
                         </div>
                     </div>
                 </fieldset>

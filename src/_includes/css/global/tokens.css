@@ -109,12 +109,36 @@
   margin-top: clamp(3.94rem, calc(3.13rem + 4.02vw), 6.00rem)
 }
 
+.mr-200 {
+  margin-right: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
+.mr-300 {
+  margin-right: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
+}
+
+.mb-300 {
+  margin-bottom: clamp(0.69rem, calc(0.52rem + 0.85vw), 1.13rem)
+}
+
+.mb-200 {
+  margin-bottom: clamp(0.31rem, calc(0.14rem + 0.85vw), 0.75rem)
+}
+
 .block {
   display: block
 }
 
+.inline-block {
+  display: inline-block
+}
+
 .flex {
   display: flex
+}
+
+.inline-flex {
+  display: inline-flex
 }
 
 .grid {
@@ -179,6 +203,10 @@
 
 .flex-col {
   flex-direction: column
+}
+
+.flex-wrap {
+  flex-wrap: wrap
 }
 
 .content-center {
@@ -327,12 +355,24 @@
     grid-column: span 6 / span 6
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0
+  }
+
+  .md\:inline-flex {
+    display: inline-flex
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr))
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap
   }
 
   .md\:text-left {
@@ -387,6 +427,10 @@
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 
   .lg\:grid-cols-5 {

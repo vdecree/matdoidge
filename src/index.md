@@ -9,7 +9,7 @@ blocks:
     buttons:
       - text: View My Work
         link: /work
-    image: /uploads/hero-new.jpg
+    image: /uploads/hero-new-1-.jpg
     imagealt: Homepage hero image
   - type: intro
     eyebrow: uncover hidden opportunities

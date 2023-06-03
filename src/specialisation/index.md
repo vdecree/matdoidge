@@ -1,6 +1,6 @@
 ---
 layout: layouts/nohero.njk
-title: Specialization
+title: "Specialisation "
 blocks:
   - type: specialization
     eyebrow: Specialization
@@ -53,7 +53,7 @@ blocks:
           work with you to define your brand's personality, voice, and
           positioning.
 meta:
-  title: Specialization | Mat Doidge - Freelance Web Designer
+  title: Specialisation | Mat Doidge - Freelance Web Designer
 eleventyNavigation:
-  key: Specialization
+  key: Specialisation
 ---

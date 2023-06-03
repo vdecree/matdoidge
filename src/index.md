@@ -13,7 +13,7 @@ blocks:
     imagealt: Homepage hero image
   - type: intro
     eyebrow: uncover hidden opportunities
-    title: For over 10 years I have embolden the cautious & championed the brave.
+    title: For over 10 years I have emboldened the cautious & championed the brave.
     content: I'm a digital adventurer on a mission to carve new paths in the
       ever-changing digital world. I believe that the best design is always the
       result of hard work and relentless dedication. Embark on this journey with

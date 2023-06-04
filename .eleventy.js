@@ -20,6 +20,7 @@ module.exports = (eleventyConfig) => {
 
   // Add shortcodes
   eleventyConfig.addShortcode('image', imageShortcode);
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // Pass through
   eleventyConfig.addPassthroughCopy('./src/admin/config.yml');

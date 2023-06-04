@@ -31,6 +31,10 @@
     margin-top: var(--size-200);
 }
 
+.work .work-list__item .text p:first-child{
+    opacity: .5;
+}
+
 .work .work-list__item .image::before{
     content: "";
     position: absolute;

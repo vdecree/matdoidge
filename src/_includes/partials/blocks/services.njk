@@ -19,7 +19,7 @@
                             <h5>{{ specialism.servicename }}</h5>
                         </div>
                         {{ specialism.text | markdown | safe }}
-                        <a href="{{ specialism.link|default("/specialization", true) }}" class="breakout-button"></a>
+                        <a href="{{ specialism.link|default("/specialisation", true) }}" class="breakout-button"></a>
                     </li>
                     {% endfor %}
                 </ul>

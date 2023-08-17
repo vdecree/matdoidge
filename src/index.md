@@ -4,7 +4,7 @@ title: Home
 blocks:
   - type: hero
     title: Pioneering Perspective
-    eyebrow: Freelance Web Designer
+    eyebrow: Freelance Designer & Front-end Developer
     content: I help brands and businesses propel themselves in the connected world.
     buttons:
       - text: View My Work

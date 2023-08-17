@@ -3,7 +3,7 @@ title: CH Barons
 date: 2023-01-31T10:55:52.992Z
 tagline: tagg
 thumbnail: /uploads/cb-thumbnail.jpg
-development: true
+development: false
 heroimage: /uploads/cb-hero.jpg
 heroalt: ch barons hero image
 services:
@@ -34,6 +34,10 @@ projects:
       I created a monogram-style brand mark that is responsive and adaptable across various sizes and mediums, including branded clothing. The website was developed using the Kirby CMS, providing the team with a remarkably fast, efficient, and user-friendly platform for future website maintenance.
     client: CH Barons
     year: "2023"
+    clientlink: https://www.chbarons.co.uk/
+    button:
+      text: Visit Website
+      link: https://www.chbarons.co.uk/
   - type: imagefull
     image: /uploads/cb-full-image.jpg
     alt: ch barons homepage design

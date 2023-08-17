@@ -35,7 +35,7 @@ projects:
   - type: imagefull
     image: /uploads/rr-home.jpg
     alt: ritty homepage
-    background: 6e754b
+    background: 4A6A21
   - type: text
     eyebrow: sdf
     content: "### I Infused the designs to echo the tranquil beauty that surrounds
@@ -46,5 +46,5 @@ projects:
     imagetwo: /uploads/rr-design-2.jpg
     altone: ritty design screen 1
     alttwo: ritty design screen 2
-    background: 6e754b
+    background: 4A6A21
 ---

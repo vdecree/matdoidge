@@ -31,7 +31,7 @@ projects:
 
       By implementing a clear hierarchy and carefully organizing sections, we ensured the team could easily add and manage content. Our goal was to create a seamless and user-friendly path through the website, offering an improved experience for both the team and their visitors. The site leverages the power of 11ty and Netlify CMS - expertly built by Ryan from Gittings Studio.
     client: Gittings Studio
-    clientlink: https://www.ryangittings.co.uk/
+    clientlink: https://gittings.studio/
     year: "2023"
     button:
       text: View Website

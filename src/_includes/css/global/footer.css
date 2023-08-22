@@ -19,6 +19,26 @@
     opacity: .3;
 }
 
+.site-socials{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    gap: .6rem;
+}
+
+.site-socials li a svg{
+    width: 1.6rem;
+    height: auto;
+    display: block;
+    fill: var(--color-light);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+}
+
+.site-socials li a:hover svg{
+    fill: var(--color-primary);
+}
+
 @keyframes bounce {
 0%,
     100% {

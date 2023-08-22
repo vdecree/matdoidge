@@ -1,11 +1,3 @@
-# Blyth Eleventy Starter
+# matdoidge 2023
 
-<img src="https://blythcss.dev/img/logo.svg" width="360" alt="Blyth CSS">
-
-## Documentation
-
-Documentation coming soon.
-
-## Contributing
-
-If you're interested in contributing to Blyth Eleventy Starter, please submit a pull request.
+Built using 11ty starter from Ryan Gittings. Hosted on netlify.
